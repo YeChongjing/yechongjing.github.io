@@ -3,9 +3,9 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Ycjing
-subtitle: Walk steps step by step
-description: YeChongjing
+title: 无知@蜕变
+subtitle: 无知者，知天下。
+description: 叶崇京的个人博客。
 author: Albert Lawrence
 email: 15826309214@163.com
 language: zh-CN
@@ -14,8 +14,8 @@ timezone:
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
 #1.这里可能需要修改
-url: http://yechongjing.github.io
-root: /public
+url: "https://yechongjing.github.io"
+root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 
