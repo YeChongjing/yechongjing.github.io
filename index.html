@@ -6,8 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="fluid-icon" href="favicon.ico" />
     <title>Albert Lawrence's Blog</title>
+
+    <style>
+
+    </style>
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- index.css -->
+    <link href="css/index.css" type="text/css" rel="stylesheet"/>
     <!--[if lt IE 9]>
     <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
     <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
@@ -16,18 +22,153 @@
 <body>
 <nav class="navbar navbar-default">
     <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="https://github.com/YeChongjing" id="blog"><img src="images/favicon.jpg" alt="YeChongJing's Blog" title="YeChongJing's Blog"/></a>
+        </div><!-- 小屏幕时右侧的下拉菜单 navbar-header  -->
 
-        <a class="navbar-brand" href="https://github.com/YeChongjing/"><img src="images/favicon.jpg" alt="Y"/>我的GitHub</a>
-    </div>
+        <!--收集导航链接，表单和其他内容进行切换-->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#"><i class="glyphicon glyphicon-home"></i>&nbsp;&nbsp;首页 <span class="sr-only">(current)</span></a></li>
+                <li><a href="#"><i class="glyphicon glyphicon-education"></i>&nbsp;&nbsp;行家 </a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                        <i class="glyphicon glyphicon-th-list"></i>&nbsp;&nbsp;分类 <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Another action</a></li>
+                        <li><a href="#">Something else here</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">Separated link</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">One more separated link</a></li>
+                    </ul>
+                </li>
+            </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#"><i class="glyphicon glyphicon-eye-open"></i>&nbsp;&nbsp;关于 </a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                        <i class="glyphicon glyphicon-align-right"></i>&nbsp;&nbsp;友情链接 <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Another action</a></li>
+                        <li><a href="#">Something else here</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">Separated link</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div><!-- navbar-header -->
+
+    </div><!--container-->
 </nav>
+<div class="main">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-3">
+                <ul type="circle">
+                    <li><a href="#">blog 1</a></li>
+                </ul>
+            </div>
+            <div class="col-sm-9">
+                <ul type="circle">
+                    <li>blog 1</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-3">
+                <ul type="circle">
+                    <li>blog 1</li>
+                </ul>
+            </div>
+            <div class="col-sm-9">
+                <ul type="circle">
+                    <li>blog 1</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-3">
+                <ul type="circle">
+                    <li>blog 1</li>
+                </ul>
+            </div>
+            <div class="col-sm-9">
+                <ul type="circle">
+                    <li>blog 1</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
 
 
 
+
+
+
+
+<!--  页脚 -->
+<footer class="main-footer">
+    <div class="container">
+        <div class="row  text-center">
+            <div class="col-sm-4">
+                <div class="widget">
+                    <h4 class="title">我们用到的技术</h4>
+                    <div class="content tag-cloud">
+                        <a href="http://www.bootcss.com/" title="Bootstrap中文网" onclick="_hmt.push(['_trackEvent', 'link', 'click', 'Bootstrap中文网'])" target="_blank">Bootstrap</a>
+                        <a href="http://www.jquery123.com/" title="jQuery中文文档" onclick="_hmt.push(['_trackEvent', 'link', 'click', 'jQuery中文文档'])" target="_blank">jQuery</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-4">
+                <div class="widget">
+                    <div class="content tag-cloud">
+                        <img src="images/panda.gif" title="加载更多" style="width: 150px;height: 150px;border-radius: 50%"/>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-sm-4">
+                <div class="widget">
+                    <h4 class="title">赞助商</h4>
+                    <div class="content friend-links">
+                        <a href="#" title="No" target="_blank">No</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<div class="copyright">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 text-center">
+                <span>Copyright &copy; <a href="https://yechongjing.io/">叶崇京 && Albert Lawrence</a></span> |
+                <span><a href="http://www.freecodecamp.cn/" target="_blank">向FreeCodeCamp进发</a></span>
+            </div>
+        </div>
+    </div>
+</div>
 
 
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="js/bootstrap.min.js"></script>
+<script src="js/index.js"></script>
 </body>
 </html>

@@ -1,0 +1,33 @@
+body{
+    background-color: #eee;
+}
+#blog img{
+    margin-top: -8px;
+}
+
+.main{
+    padding: 20px 0;
+}
+.main .row{
+    border: 1px solid #ffffff;
+}
+.main .row .col-sm-3,.main .row .col-sm-9{
+    border-right: 1px solid #ffffff;
+    padding: 15px 0;
+}
+footer{
+    padding: 20px 0;
+    color: white;
+    background-color: #202020;
+}
+footer a{
+    padding: 2px 8px;
+}
+.copyright{
+    padding: 15px 0;
+    background-color: #111;
+}
+
+.copyright a{
+    padding: 2px 8px;
+}
