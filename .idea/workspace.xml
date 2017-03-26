@@ -2,37 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="39016caf-1f59-4312-8bd2-ff6b95188d2a" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/favicon.ico" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/bootstrap.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/bootstrap.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="DELETED" beforePath="D:\GithubFilter\hexo\yechongjing.github.io\.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="D:\GithubFilter\hexo\yechongjing.github.io\.travis.yml" afterPath="" />
-      <change type="DELETED" beforePath="D:\GithubFilter\hexo\yechongjing.github.io\CODE_OF_CONDUCT.md" afterPath="" />
-      <change type="DELETED" beforePath="D:\GithubFilter\hexo\yechongjing.github.io\CONTRIBUTING.md" afterPath="" />
-      <change type="DELETED" beforePath="D:\GithubFilter\hexo\yechongjing.github.io\Gemfile" afterPath="" />
-      <change type="DELETED" beforePath="D:\GithubFilter\hexo\yechongjing.github.io\LICENSE" afterPath="" />
-      <change type="DELETED" beforePath="D:\GithubFilter\hexo\yechongjing.github.io\README.md" afterPath="" />
-      <change type="DELETED" beforePath="D:\GithubFilter\hexo\yechongjing.github.io\_config.yml" afterPath="" />
-      <change type="DELETED" beforePath="D:\GithubFilter\hexo\yechongjing.github.io\_layouts\default.html" afterPath="" />
-      <change type="DELETED" beforePath="D:\GithubFilter\hexo\yechongjing.github.io\_sass\jekyll-theme-architect.scss" afterPath="" />
-      <change type="DELETED" beforePath="D:\GithubFilter\hexo\yechongjing.github.io\_sass\normalize.scss" afterPath="" />
-      <change type="DELETED" beforePath="D:\GithubFilter\hexo\yechongjing.github.io\_sass\rouge-github.scss" afterPath="" />
-      <change type="DELETED" beforePath="D:\GithubFilter\hexo\yechongjing.github.io\another-page.md" afterPath="" />
-      <change type="DELETED" beforePath="D:\GithubFilter\hexo\yechongjing.github.io\assets\css\print.scss" afterPath="" />
-      <change type="DELETED" beforePath="D:\GithubFilter\hexo\yechongjing.github.io\assets\css\style.scss" afterPath="" />
-      <change type="DELETED" beforePath="D:\GithubFilter\hexo\yechongjing.github.io\assets\images\body-bg.jpg" afterPath="" />
-      <change type="DELETED" beforePath="D:\GithubFilter\hexo\yechongjing.github.io\assets\images\download-button.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\GithubFilter\hexo\yechongjing.github.io\assets\images\github-button.png" afterPath="" />
-      <change type="DELETED" beforePath="D:\GithubFilter\hexo\yechongjing.github.io\assets\images\header-bg.jpg" afterPath="" />
-      <change type="DELETED" beforePath="D:\GithubFilter\hexo\yechongjing.github.io\assets\images\highlight-bg.jpg" afterPath="" />
-      <change type="DELETED" beforePath="D:\GithubFilter\hexo\yechongjing.github.io\assets\images\sidebar-bg.jpg" afterPath="" />
-      <change type="DELETED" beforePath="D:\GithubFilter\hexo\yechongjing.github.io\index.md" afterPath="" />
-      <change type="DELETED" beforePath="D:\GithubFilter\hexo\yechongjing.github.io\jekyll-theme-architect.gemspec" afterPath="" />
-      <change type="DELETED" beforePath="D:\GithubFilter\hexo\yechongjing.github.io\script\bootstrap" afterPath="" />
-      <change type="DELETED" beforePath="D:\GithubFilter\hexo\yechongjing.github.io\script\cibuild" afterPath="" />
-      <change type="DELETED" beforePath="D:\GithubFilter\hexo\yechongjing.github.io\script\release" afterPath="" />
-      <change type="DELETED" beforePath="D:\GithubFilter\hexo\yechongjing.github.io\thumbnail.png" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
+      <change type="MOVED" beforePath="D:\GithubFilter\hexo\yechongjing.github.io\images\favicon.ico" afterPath="$PROJECT_DIR$/favicon.ico" />
     </list>
     <ignored path="yechongjing.github.io.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -56,8 +27,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.55785835">
-              <caret line="17" column="21" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="21" />
+            <state vertical-scroll-proportion="0.6234888">
+              <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -163,6 +134,7 @@
       <recent name="D:\GithubFilter\hexo\yechongjing.github.io\css" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\GithubFilter\hexo\yechongjing.github.io" />
       <recent name="D:\GithubFilter\hexo\yechongjing.github.io\css" />
       <recent name="D:\GithubFilter\hexo\yechongjing.github.io\js" />
       <recent name="D:\GithubFilter\hexo\yechongjing.github.io\images" />
@@ -213,7 +185,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24963397" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -243,11 +215,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/images/favicon.ico">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://E:/bootstrap study/201558234021叶崇京/模板.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-13.214286">
@@ -272,10 +239,15 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/favicon.ico">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.55785835">
-          <caret line="17" column="21" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="21" />
+        <state vertical-scroll-proportion="0.6234888">
+          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
           <folding />
         </state>
       </provider>
