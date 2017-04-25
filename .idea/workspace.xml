@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="39016caf-1f59-4312-8bd2-ff6b95188d2a" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/Resume.html" afterPath="$PROJECT_DIR$/html/Resume.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="39016caf-1f59-4312-8bd2-ff6b95188d2a" name="Default" comment="" />
     <ignored path="yechongjing.github.io.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
