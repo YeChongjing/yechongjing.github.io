@@ -4,9 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="fluid-icon" href="favicon.ico" />
-    <title>Lawrence's Blog</title>
+    <link rel="apple-touch-icon" href="images/favicon.png">
+    <link rel="icon" sizes="32x32" type="image/png" href="images/favicon.png">
+    <title>崇京·叶 的博客 -- Lawrence's Blog</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="崇京·叶的博客主要记载大学以来的学习体会和一些学习成果，以便以后使用复习。">
+    <meta name="keywords" content="叶崇京的博客,崇京·叶的博客,Albert Lawrence's blog,java学习笔记,算法学习笔记,前段学习笔记,网页实战">
+    <meta name="author" content="叶崇京 Albert Lawrence">
+    <meta name="robots" content="index,follow">
+    <meta name="application-name" content="崇京·叶的博客">
+
 
     <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
     <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -17,9 +25,18 @@
     <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
     <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+    <style>
+        body{
+            margin-top: 70px;
+        }
+        .masthead{
+            background-image: url("images/indexImg/school-branch.jpg");
+            background-repeat: repeat-y;
+        }
+    </style>
 </head>
 <body>
-<nav class="navbar navbar-default">
+<nav class="navbar navbar-inverse navbar-fixed-top">
     <div class="container">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
@@ -28,25 +45,57 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="https://github.com/YeChongjing" id="blog"><img src="images/favicon.jpg" alt="YeChongJing's Blog" title="YeChongJing's Blog"/></a>
+            <a class="navbar-brand" href="https://github.com/YeChongjing" id="blog"><img src="images/my.jpg" alt="YeChongJing's Blog" title="YeChongJing's Github"/></a>
         </div><!-- 小屏幕时右侧的下拉菜单 navbar-header  -->
 
         <!--收集导航链接，表单和其他内容进行切换-->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <div class="collapse navbar-collapse" id="#bs-example-navbar-collapse-1" >
             <ul class="nav navbar-nav">
                 <li class="active"><a href="#"><i class="glyphicon glyphicon-home"></i>&nbsp;&nbsp;首页 <span class="sr-only">(current)</span></a></li>
-                <li><a href="#"><i class="glyphicon glyphicon-education"></i>&nbsp;&nbsp;行家 </a></li>
+                <li class="dropdown">
+                    <a href="#"  class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                        <i class="glyphicon glyphicon-education"></i>&nbsp;&nbsp;前段网页 <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">HTML5</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">CSS3</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">jQuery</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">Bootstrap</a></li>
+                    </ul>
+                </li>
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                        <i class="glyphicon glyphicon-th-list"></i>&nbsp;&nbsp;分类 <span class="caret"></span></a>
+                        <i class="glyphicon glyphicon-th-list"></i>&nbsp;&nbsp;Java之路 <span class="caret"></span></a>
                     <ul class="dropdown-menu">
-                        <li><a href="#">Action</a></li>
-                        <li><a href="#">Another action</a></li>
-                        <li><a href="#">Something else here</a></li>
+                        <li><a href="#">java</a></li>
                         <li role="separator" class="divider"></li>
-                        <li><a href="#">Separated link</a></li>
+                        <li><a href="#">JSP</a></li>
                         <li role="separator" class="divider"></li>
-                        <li><a href="#">One more separated link</a></li>
+                        <li><a href="#">SSH</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">Java高级学习</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                        <i class="glyphicon glyphicon-edit"></i>&nbsp;&nbsp;算法分析 <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">C语言</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">数据结构</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">算法分析与设计</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                        <i class="glyphicon glyphicon-wrench"></i>&nbsp;&nbsp;网站实例 <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">疯狂的大学生活（jQuery）</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">我的家乡山水</a></li>
                     </ul>
                 </li>
             </ul>
@@ -57,11 +106,7 @@
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
                         <i class="glyphicon glyphicon-align-right"></i>&nbsp;&nbsp;友情链接 <span class="caret"></span></a>
                     <ul class="dropdown-menu">
-                        <li><a href="#">Action</a></li>
-                        <li><a href="#">Another action</a></li>
-                        <li><a href="#">Something else here</a></li>
-                        <li role="separator" class="divider"></li>
-                        <li><a href="#">Separated link</a></li>
+                        <li><a href="http://www.cqwu.net/">我的大学</a></li>
                     </ul>
                 </li>
             </ul>
@@ -69,45 +114,89 @@
 
     </div><!--container-->
 </nav>
+
+<!-- banner部分 -->
+<div class="jumbotron masthead">
+    <div class="container text-center">
+        <h1>崇京·叶的博客</h1>
+        <h2>记录点滴学习之路</h2>
+        <p class="masthead-button-links">
+            <a class="btn btn-lg btn-primary btn-shadow" href="#" target="_blank" role="button" onclick="">疯狂的大学生活</a>
+        </p>
+        <ul class="masthead-links">
+                <a href="#" target="_blank" role="button" onclick="">我的家乡山水</a>
+        </ul>
+    </div>
+</div>
+
+
+
+<!-- project部分 -->
+
 <div class="main">
     <div class="container">
-        <div class="row">
-            <div class="col-sm-3">
-                <ul type="circle">
-                    <li><a href="#">blog 1</a></li>
-                </ul>
-            </div>
-            <div class="col-sm-9">
-                <ul type="circle">
-                    <li>blog 1</li>
-                </ul>
-            </div>
-        </div>
 
-        <div class="row">
-            <div class="col-sm-3">
-                <ul type="circle">
-                    <li>blog 1</li>
-                </ul>
+        <div class="row text-center">
+            <!--project 1-->
+            <div class="col-sm-6 col-md-4 col-lg-3 ">
+                <div class="thumbnail" style="height: 336px;">
+                    <a href="#" title="记录大学点滴生活" target="_blank" onclick=""><img class="lazy" width="300" height="150" src="images/project-1/bg-project-1.jpg" alt="Project one"></a>
+                    <div class="caption">
+                        <h3>
+                            <a href="#" title="记录大学点滴生活，通过《锋利的jQuery》实例表述。" target="_blank" onclick="">疯狂的大学生活<br><small>by @崇京</small></a>
+                        </h3>
+                        <p>
+                            记录大学点滴生活，通过《锋利的jQuery》实例表述。
+                        </p>
+                    </div>
+                </div>
             </div>
-            <div class="col-sm-9">
-                <ul type="circle">
-                    <li>blog 1</li>
-                </ul>
+            <!--project 1-->
+            <!--project 2-->
+            <div class="col-sm-6 col-md-4 col-lg-3 ">
+                <div class="thumbnail" style="height: 336px;">
+                    <a href="#" title="记录大学点滴生活" target="_blank" onclick=""><img class="lazy" width="300" height="150" src="images/project-1/bg-project-1.jpg" alt="Project one"></a>
+                    <div class="caption">
+                        <h3>
+                            <a href="#" title="记录大学点滴生活，通过《锋利的jQuery》实例表述。" target="_blank" onclick="">疯狂的大学生活<br><small>by @崇京</small></a>
+                        </h3>
+                        <p>
+                            记录大学点滴生活，通过《锋利的jQuery》实例表述。
+                        </p>
+                    </div>
+                </div>
             </div>
-        </div>
-
-        <div class="row">
-            <div class="col-sm-3">
-                <ul type="circle">
-                    <li>blog 1</li>
-                </ul>
+            <!--project 2-->
+            <!--project 3-->
+            <div class="col-sm-6 col-md-4 col-lg-3 ">
+                <div class="thumbnail" style="height: 336px;">
+                    <a href="#" title="记录大学点滴生活" target="_blank" onclick=""><img class="lazy" width="300" height="150" src="images/project-1/bg-project-1.jpg" alt="Project one"></a>
+                    <div class="caption">
+                        <h3>
+                            <a href="#" title="记录大学点滴生活，通过《锋利的jQuery》实例表述。" target="_blank" onclick="">疯狂的大学生活<br><small>by @崇京</small></a>
+                        </h3>
+                        <p>
+                            记录大学点滴生活，通过《锋利的jQuery》实例表述。
+                        </p>
+                    </div>
+                </div>
             </div>
-            <div class="col-sm-9">
-                <ul type="circle">
-                    <li>blog 1</li>
-                </ul>
+            <!--project 3-->
+            <!--project 4-->
+            <div class="col-sm-6 col-md-4 col-lg-3 ">
+                <div class="thumbnail" style="height: 336px;">
+                    <a href="#" title="记录大学点滴生活" target="_blank" onclick=""><img class="lazy" width="300" height="150" src="images/project-1/bg-project-1.jpg" alt="Project one"></a>
+                    <div class="caption">
+                        <h3>
+                            <a href="#" title="记录大学点滴生活，通过《锋利的jQuery》实例表述。" target="_blank" onclick="">疯狂的大学生活<br><small>by @崇京</small></a>
+                        </h3>
+                        <p>
+                            记录大学点滴生活，通过《锋利的jQuery》实例表述。
+                        </p>
+                    </div>
+                </div>
             </div>
+            <!--project 4-->
         </div>
     </div>
 </div>

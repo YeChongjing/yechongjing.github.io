@@ -2,12 +2,18 @@
 <html lang="zh-cn">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-COMPATIBLE" content="IE=edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+    <link rel="fluid-icon" href="favicon.ico" />
+    <link rel="apple-touch-icon" href="../images/favicon.png">
+    <link rel="icon" sizes="32x32" type="image/png" href="../images/favicon.png">
+    <title>崇京·叶 的简历 -- Lawrence's Resume</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
-    <link rel="shortcut icon" href="favicon.ico" />
-    <title>Lawrence's resume</title>
+    <meta name="description" content="崇京·叶的简历主要从大二开始设计积累，希望能成为以后找工作的参考。">
+    <meta name="keywords" content="叶崇京的博客,崇京·叶的简历,Albert Lawrence's resume">
+    <meta name="author" content="叶崇京 Albert Lawrence">
+    <meta name="robots" content="index,follow">
+    <meta name="application-name" content="崇京·叶的简历">
 
     <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
 
@@ -31,10 +37,10 @@
 <body class="container">
 <!--导航条-->
 
-<ul class="navbar navbar-default navbar-fixed-top">
-    <div class="container-fluid">
+<ul class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
         <div class="navbar-header">
-            <a class="navbar-brand" href="网页五.html">
+            <a class="navbar-brand" href="../index.html">
                 <span class="glyphicon glyphicon-home"></span>
             </a>
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#divNav">
@@ -46,6 +52,7 @@
         <!--.divNav-->
         <div id="divNav" class="collapse navbar-collapse">
             <ul class="nav navbar-nav">
+                <li class="active"><a href="../index.html">首页</a></li>
                 <li><a href="#info">基本信息</a></li>
                 <li><a href="#skill">所会技能</a></li>
                 <li><a href="#work">工作经验</a></li>
@@ -73,28 +80,24 @@
                 <footer>未来之神</footer>
             </blockquote>
             <div class="row text-center">
-                <img src="images/images-6/headIcon.jpg" alt="boy" class="img-responsive img-circle img-thumbnail"/>
+                <img src="../images/resume/icon.jpg" alt="boy" class="img-responsive img-circle img-thumbnail"/>
             </div>
             <p></p>
             <div class="row text-center">
-                <div class="col-sm-4"><h2><abbr title="5年工作经历">5</abbr></h2></div>
-                <div class="col-sm-4"><h2><abbr title="3个大型网站的项目案例">2</abbr></h2></div>
-                <div class="col-sm-4"><h2><abbr title="6门相关技能">6</abbr></h2></div>
+                <div class="col-sm-4"><h2><abbr title="互联网+创新创业大赛">1次</abbr></h2></div>
+                <div class="col-sm-4"><h2><abbr title="科研申报">1次</abbr></h2></div>
+                <div class="col-sm-4"><h2><abbr title="学习委员">4年</abbr></h2></div>
             </div>
         </div>
         <div class="col-sm-9">
             <div class="jumbotron">
                 <h2>自我评价</h2>
                 <hr/>
-                <p><kbd>5</kbd>年<code>web前段</code>开发经验</p>
-                <p><kbd>6</kbd>个大型网站的项目案例</p>
-                <p><kbd>6</kbd>门相关技能</p>
-                <p><kbd>团队协作能力强</kbd></p>
+                <p><kbd>4</kbd>年<code>等待一段自我评价</code>学习经历</p>
                 <div class="text-right">
-                    <button class="btn btn-primary">
-                        了解更多
-                        <span class="glyphicon glyphicon-search"></span>
-                    </button>
+                        <a href="Reader.html" class="btn btn-primary">了解更多
+                            <span class="glyphicon glyphicon-search"></span>
+                        </a>
                 </div>
             </div>
             <!-- jumbotron end -->
@@ -115,8 +118,8 @@
                     <tr>
                         <th>手机</th>
                         <td>15826309214</td>
-                        <th>年龄邮箱</th>
-                        <td>1052301735@qq.com</td>
+                        <th>QQ邮箱</th>
+                        <td>1052301735toqq.com</td>
                     </tr>
                 </table>
             </div>
@@ -126,39 +129,42 @@
     <!-- 所会技能 -->
     <div class="row">
         <h2 id="skill" class="lead">所会技能</h2>
-        <p>
-            <span class="label label-success">HTML5</span>
-            <span class="label label-success">Photoshop</span>
-            <span class="label label-success">Axure</span>
-        </p>
-                <div class="progress">
-                    <div class="progress-bar progress-bar-success active progress-bar-striped" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
-                        <span class="sr-only">60% Complete</span>
-                    </div>
+        <div class="col-sm-6 col-md-4 col-lg-3 ">
+            <div class="panel panel-default text-center">
+                <div class="panel-heading">前段网页（单位：%）</div>
+                <div class="panel-body">
+                    <canvas id="webFrontend" width="250" height="180"></canvas>
                 </div>
-
-        <p>
-            <span class="label label-info">JavaScript</span>
-            <span class="label label-info">jQuery</span>
-            <span class="label label-info">DOM</span>
-        </p>
-            <div class="progress">
-                <div class="progress-bar progress-bar-info active progress-bar-striped" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%;">
-                    <span class="sr-only">80% Complete</span>
-                </div>
-            </div>
-
-        <p>
-            <span class="label label-info">AngularJS</span>
-            <span class="label label-info">NodeJS</span>
-            <span class="label label-info">MongoDB</span>
-        </p>
-        <div class="progress">
-            <div class="progress-bar progress-bar-danger active progress-bar-striped" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 95%;">
-                <span class="sr-only">95% Complete</span>
+                <div class="panel-footer">前段各技术的掌握概况</div>
             </div>
         </div>
-
+        <div class="col-sm-6 col-md-4 col-lg-3 ">
+            <div class="panel panel-default text-center">
+                <div class="panel-heading">Java之路（单位：%）</div>
+                <div class="panel-body">
+                    <canvas id="javaRoad" width="250" height="180"></canvas>
+                </div>
+                <div class="panel-footer">Java各技术的掌握概况</div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3 ">
+            <div class="panel panel-default text-center">
+                <div class="panel-heading">算法分析（单位：%）</div>
+                <div class="panel-body">
+                    <canvas id="algorithm" width="250" height="180"></canvas>
+                </div>
+                <div class="panel-footer">算法分析的学习情况</div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3 ">
+            <div class="panel panel-default text-center">
+                <div class="panel-heading">网站实例（单位：个）</div>
+                <div class="panel-body">
+                    <canvas id="example" width="250" height="180"></canvas>
+                </div>
+                <div class="panel-footer">实例的各类型比例</div>
+            </div>
+        </div>
     </div>
     <!-- 所会技能 -->
 
@@ -167,7 +173,7 @@
         <h2 id="work" class="lead">工作经历</h2>
         <ul class="list-group">
             <li class="list-group-item active">
-                <span>2015年6月 - <mark>至今</mark></span>
+                <span>2015年6月 - <mark>2019年6月</mark></span>
                 <span class="lead">重庆文理学院</span>
                 <div>软件工程  <small>  软件一班学委大大</small></div>
             </li>
@@ -204,20 +210,19 @@
             <!-- Wrapper for slides -->
             <div class="carousel-inner" role="listbox">
                 <div class="item active">
-                    <img class="img-responsive img-rounded" src="images/images-6/1.jpg" alt="...">
+                    <img class="img-responsive img-rounded" src="../images/resume/banner.jpg" alt="...">
                     <div class="carousel-caption">
                        图书馆....的学海广场
                     </div>
                 </div>
                 <div class="item">
-                    <img class="img-responsive img-rounded" src="images/images-6/2.jpg" alt="...">
+                    <img class="img-responsive img-rounded" src="../images/resume/banner.jpg" alt="...">
                     <div class="carousel-caption">
                         知津楼的....学海广场
                     </div>
                 </div>
                 <div class="item">
-                    <img class="img-responsive img-rounded"
-                         src="images/images-6/3.jpg" alt="...">
+                    <img class="img-responsive img-rounded" src="../images/resume/banner.jpg" alt="...">
                     <div class="carousel-caption">
                         赋棠院的金....科地产
                     </div>
@@ -243,44 +248,13 @@
         </div>
     </div>
     <!-- 项目经验 -->
-    <!-- 请联系我 -->
-    <div class="row content">
-        <h2 id="connect" class="lead">请联系我</h2>
-        <div class="panel panel-default">
-            <div class="panel-heading">如果您对我的经历感兴趣</div>
-            <div class="panel-body">
-                <form action="#" method="post">
-                    <div class="form-group has-feedback has-warning">
-                        <label class="control-label" for="email"><label><span class="glyphicon glyphicon-user"></span></label>&nbsp;Username</label>
-                        <div class="input-group">
-
-                            <input type="text" class="form-control" id="username">
-                            <span class="glyphicon glyphicon-warning-sign form-control-feedback"></span>
-                        </div>
-                    </div>
-                    <div class="form-group has-feedback has-success">
-                        <label class="control-label" for="email"><label><span class="glyphicon glyphicon-send"></span></label>&nbsp;Email</label>
-                        <div class="input-group">
-                            <input type="email" class="form-control" id="email">
-                            <span class="glyphicon glyphicon-ok form-control-feedback"></span>
-                        </div>
-                    </div>
-                    <div class="btn-group pull-right">
-                        <button type="submit" class="btn btn-success">发送联系</button>
-                        <button type="reset" class="btn btn-danger">重置信息</button>
-                    </div>
-                    <div class="clearfix"></div>
-                </form>
-            </div>
-            <div class="panel-footer"></div>
-        </div>
-    </div>
-    <!-- 请联系我 -->
 </div>
 
-
+<hr/>
 <footer class="text-center">
-    <span>All Images and Contents &copy;201558234021叶崇京</span>
+    <p style="line-height: 70px;">
+        <span>&copy;15826309214to163.com    叶崇京</span>
+    </p>
 </footer>
 
 
@@ -289,5 +263,98 @@
 <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
 <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
 <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- chart.js插件用于扇形图分析 -->
+<script type="text/javascript" src="../js/Chart.min.js"></script>
+
+
+<script type="text/javascript">
+    var ctx1Data=[{
+        value:30,
+        color:"#ffdf1e",
+        highlight:"#f05f5a",
+        label:"HTML5+CSS3"
+    },{
+        value:20,
+        color:"#6dc064",
+        highlight:"#f05f5a",
+        label:"Javascript"
+    },{
+        value:20,
+        color:"#63c8d0",
+        highlight:"#f05f5a",
+        label:"jQuery"
+    },{
+        value:30,
+        color:"#ffb700",
+        highlight:"#f05f5a",
+        label:"Bootstrap"
+    }];
+    var ctx2Data=[{
+        value:300,
+        color:"#F7464A",
+        highlight:"#FF5A5E",
+        label:"Java"
+    },{
+        value:100,
+        color:"#46F74A",
+        highlight:"#FF5A5E",
+        label:"JSP"
+    },{
+        value:500,
+        color:"#4AF746",
+        highlight:"#FF5A5E",
+        label:"SSH"
+    },{
+        value:500,
+        color:"#4AF746",
+        highlight:"#FF5A5E",
+        label:"Java高级学习"
+    }];
+    var ctx3Data=[{
+        value:300,
+        color:"#F7464A",
+        highlight:"#FF5A5E",
+        label:"C语言"
+    },{
+        value:100,
+        color:"#46F74A",
+        highlight:"#FF5A5E",
+        label:"数据结构"
+    },{
+        value:500,
+        color:"#4AF746",
+        highlight:"#FF5A5E",
+        label:"算法分析与设计"
+    }];
+    var ctx4Data=[{
+        value:300,
+        color:"#F7464A",
+        highlight:"#FF5A5E",
+        label:"前段"
+    },{
+        value:100,
+        color:"#46F74A",
+        highlight:"#FF5A5E",
+        label:"java后台"
+    },{
+        value:500,
+        color:"#4AF746",
+        highlight:"#FF5A5E",
+        label:"算法设计"
+    }];
+    $(function(){
+        var ctx1 = document.getElementById("webFrontend").getContext("2d");
+        window.myPie=new Chart(ctx1).Pie(ctx1Data);
+        var ctx2 = document.getElementById("javaRoad").getContext("2d");
+        window.myPie=new Chart(ctx2).Pie(ctx2Data);
+        var ctx3 = document.getElementById("algorithm").getContext("2d");
+        window.myPie=new Chart(ctx3).Pie(ctx3Data);
+        var ctx4 = document.getElementById("example").getContext("2d");
+        window.myPie=new Chart(ctx4).Pie(ctx4Data);
+    });
+
+
+</script>
+
 </body>
 </html>
