@@ -2,6 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+    <link rel="fluid-icon" href="favicon.ico" />
+    <link rel="apple-touch-icon" href="../images/favicon.png">
+    <link rel="icon" sizes="32x32" type="image/png" href="../images/favicon.png">
     <title>Struts Hibernate Spring</title>
     <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
     <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -22,17 +27,190 @@
 
             <div id="Struts-idea" class="col-sm-12"><!--第三章-->
                 <h3>3.1 MVC思想</h3>
-                <p>alkdfjdaiojlkdf；拉快点放假啦会计法阿里斯顿看风景啊啊了快点放假啊 了卡机的浪费空间  埃里克打飞机啊安抚就O(∩_∩)O哈哈~O(∩_∩)O哈哈~O(∩_∩)O哈哈~</p>
+                <p>
+                    <kbd>MVC的思想：将应用中各级组件按功能分类，不同的组件用不同的技术充当，使用严格的分层，各层以松耦合组织在一起，从而提供良好的封装。</kbd>
+
+                    <h4><div class="text-private">来两张图</div></h4>
+                        <img src="../images/Java-EE/chapter-1/MVC.jpg" width="500" height="300" alt=""/><div class="clearfix"></div>
+                        解释一下：<br/>
+                            模型：连接（查询、增加、删除、修改）数据库的一些方法（函数）或其他方法（函数）。如连接Hibernate，SQL数据库的函数形成Model。
+
+
+                        <img src="../images/Java-EE/chapter-1/MVC-ssh.jpg" width="500" height="300" alt=""/><div class="clearfix"></div>
+                        这张图片更好的说明SSH框架的Struts2 Hibernate Spring4的作用<br/>
+                            <kbd>Struts2：</kbd>
+                            1.充当Controller，把多个视图和对应的Action注册到Struts.xml中，其中Action就负责连接
+                            业务模型并接受HTTP传入的参数。<br/>
+                            <kbd>Hibernate：</kbd>数据库<br/>
+                            <kbd>Spring：</kbd>视图
+
+
+                </p>
             </div>
 
             <div id="Struts-download" class="col-sm-12">
                 <h3>3.2 Struts2的下载</h3>
-                <p>alkdfjdaiojlkdf；拉快点放假啦会计法阿里斯顿看风景啊啊了快点放假啊 了卡机的浪费空间  埃里克打飞机啊安抚就O(∩_∩)O哈哈~O(∩_∩)O哈哈~O(∩_∩)O哈哈~</p>
+                <p>
+                    <kbd>下载地址：</kbd>http://struts.apache.org/download.cgi<br/>
+                    <img src="../images/Java-EE/chapter-1/struts-download.PNG" alt=""/>
+                    <h4 class="glyphicon glyphicon-info-sign">介绍</h4>
+                    <ul>
+                        <li><kbd>Full Distribution：</kbd>完整版：示例应用、空示例应用、核心库、源代码和文档。
+                            <img src="../images/Java-EE/chapter-1/FullDistribute.PNG" alt=""/>
+                            <ul>
+                                <li><kbd>apps：</kbd>示例应用很多像Struts.xml和Hibernate.cfg.xml都可以在里面找到。</li>
+                                <li><kbd>docs：</kbd>快速入门、文档、API文档。</li>
+                                <li><kbd>lib：</kbd>核心类库、第三方插件类库。</li>
+                                <li><kbd>src：</kbd>Struts框架源代码</li>
+                            </ul>
+                        </li>
+                        <li><kbd>Example Applications：</kbd>示例应用。</li>
+                        <li><kbd>Essential Dependencies Only：</kbd>仅包含五个Struts核心库。一般开发就够了。
+                            <img src="../images/Java-EE/chapter-1/EssentialDepentdenciesOnly.PNG" alt=""/>
+                        </li>
+                        <li><kbd>Documentation:完整版：</kbd>Struts使用文档、参考手册、API文档。</li>
+                        <li><kbd>Source：</kbd>源代码。</li>
+                    </ul>
+                </p>
             </div>
 
             <div id="Struts-process" class="col-sm-12">
-                <h3>3.3 Struts2的开发流程</h3>
-                <p>alkdfjdaiojlkdf；拉快点放假啦会计法阿里斯顿看风景啊啊了快点放假啊 了卡机的浪费空间  埃里克打飞机啊安抚就O(∩_∩)O哈哈~O(∩_∩)O哈哈~O(∩_∩)O哈哈~</p>
+                <h3>3.3 Struts2的开发流程<small>以登录为例</small></h3>
+                <p>
+                    <h4><i class="glyphicon glyphicon-edit"></i>使用工具：<kbd>MyEclipse 2015</kbd></h4>
+                    <ol>
+                        <li><kbd>File-->New-->Web Project：注意配置版本</kbd>
+                            <div class="clearfix"></div>
+                            <img src="../images/Java-EE/chapter-1/new-web-project.PNG" alt=""/>
+                        </li>
+                        <li>
+                            <kbd>WebRoot--》WEBINF--》添加content，并将index.jsp移入</kbd>这里很重要。
+                            <div class="clearfix"></div>
+                            <img src="../images/Java-EE/chapter-1/addContent.PNG" alt=""/>
+                        </li>
+                        <li>
+                            <kbd>点中文件名New--》MyEclipse-->Project Facets--》InstallApache Struts（2.*）添加Struts.xml和web.xml配置文件</kbd>这里没有（2.*是因为我已添加），你也可以在解压apps里面的示例
+                            <div class="clearfix"></div>
+                            <img src="../images/Java-EE/chapter-1/addStruts.jpg" width="100%" alt=""/>
+                        </li>
+                        <li>
+                            <kbd>去掉Struts类库</kbd>
+                            <div class="clearfix"></div>
+                            <img src="../images/Java-EE/chapter-1/removeStruts.PNG" alt=""/>
+                        </li>
+                        <li>
+                            <kbd>删除web.xml下的(.ng)</kbd>
+                            <div class="clearfix"></div>
+                            <img src="../images/Java-EE/chapter-1/removeNg.PNG" alt=""/>
+                        </li>
+                        <li>
+                            <kbd>将Essential Dependencis Only中的核心类库添加到lib下</kbd>
+                            <div class="clearfix"></div>
+                            <img src="../images/Java-EE/chapter-1/addLib.PNG" alt=""/>
+                        </li>
+                        <li>
+                            <kbd>设置UTF-8中文编码</kbd>
+                            <div class="clearfix"></div>
+                            <img src="../images/Java-EE/chapter-1/utf-8.PNG" alt=""/>
+                        </li>
+                        <li>
+                            <kbd>项目结构</kbd>
+                            <div class="clearfix"></div>
+                            <img src="../images/Java-EE/chapter-1/projectStructure.PNG" alt=""/>
+                        </li>
+                        <li>
+                            <kbd>User实体</kbd>
+                            <div class="clearfix"></div>
+                            <p>
+<pre>
+package entity;
+public class User {
+	private String username;
+	private String password;
+	public String getUsername() {
+		return username;
+	}
+	public void setUsername(String username) {
+		this.username = username;
+	}
+	public String getPassword() {
+		return password;
+	}
+	public void setPassword(String password) {
+		this.password = password;
+	}
+}
+</pre>
+                            </p>
+                        </li>
+                        <li>
+                            <kbd>LoginAction控制类</kbd>
+                            <div class="clearfix"></div>
+                            <p>
+<pre>
+package servlet.action;
+import com.opensymphony.xwork2.ActionContext;
+import com.opensymphony.xwork2.ActionSupport;
+import entity.User;
+public class Login extends ActionSupport{
+	User user = new User();
+	public User getUser() {
+		return user;
+	}
+	public void setUser(User user) {
+		this.user = user;
+	}
+	public String execute() throws Exception{
+		if("Lawrence".equals(getUser().getUsername()) && "123".equals(getUser().getPassword())){
+			ActionContext.getContext().getSession()
+			.put("user", getUser().getUsername());
+			System.out.println("success");
+			return SUCCESS;
+		}
+		System.out.println("false");
+		return "false";
+	}
+}
+</pre>
+                            </p>
+                        </li>
+                        <li>
+                            <kbd>index.jsp登录页面</kbd>
+                            <div class="clearfix"></div>
+                            <img src="../images/Java-EE/chapter-1/index.PNG" alt=""/>
+                        </li>
+                        <li>
+                            <kbd>success.jsp登录成功页面</kbd>
+                            <div class="clearfix"></div>
+                            <img src="../images/Java-EE/chapter-1/success.PNG" alt=""/>
+                        </li>
+                        <li>
+                            <kbd>false.jsp登录失败页面</kbd>
+                            <div class="clearfix"></div>
+                            <img src="../images/Java-EE/chapter-1/false.PNG" alt=""/>
+                        </li>
+                        <li>
+                            <kbd>配置Struts</kbd>
+                            <div class="clearfix"></div>
+                            <img src="../images/Java-EE/chapter-1/struts-cfg.PNG" alt=""/>
+                        </li>
+                        <li>
+                            <kbd>装入Tamcat 8里面并运行</kbd>用户名：Lawrence 密码：123
+                            <div class="clearfix"></div>
+                            <img src="../images/Java-EE/chapter-1/browser-index.PNG" alt=""/>
+                        </li>
+                        <li>
+                            <kbd>正确输入</kbd>用户名：Lawrence 密码：123
+                            <div class="clearfix"></div>
+                            <img src="../images/Java-EE/chapter-1/browser-success.PNG" alt=""/>
+                        </li>
+                        <li>
+                            <kbd>错误输入</kbd>用户名：Lawrence 密码：null
+                            <div class="clearfix"></div>
+                            <img src="../images/Java-EE/chapter-1/browser-false.PNG" alt=""/>
+                        </li>
+                    </ol>
+                </p>
             </div>
 
             <div id="Struts-cfg" class="col-sm-12">
