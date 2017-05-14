@@ -10,148 +10,10 @@
     <title>Struts Hibernate Spring</title>
     <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
     <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <style>
-        body{
-            padding-top: 70px;
-        }
-        *{
-            border: 1px #eaebe6 solid;
-        }
-    </style>
+    <link rel="stylesheet" href="../js/SSH.css">
 
 </head>
 <body class="container">
-<nav class="navbar navbar-inverse navbar-fixed-top">
-    <div class="container">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#divNav">
-                <span class="sr-only">切换菜单</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-        </div>
-        <div id="divNav" class="collapse navbar-collapse">
-            <ul class="nav navbar-nav navbar-right">
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">手机版<span class="caret"></span></a>
-                    <ul class="dropdown-menu">
-                        <ul>
-                            <li><a href="#Struts-idea">3.1 MVC思想</a></li>
-                            <li><a href="#Struts-download">3.2 Struts2的下载</a></li>
-                            <li><a href="#Struts-process">3.3 Struts2的开发流程</a></li>
-                            <li><a href="#Struts-cfg">3.4 Struts2的规范配置</a></li>
-                            <li>
-                                <a href="#Struts-Action">3.5 Struts2 实现Action</a>
-                                <ul>
-                                    <li><a href="">Action借口和ActionSupport基类</a></li>
-                                    <li><a href="">Action访问ServletAPI</a></li>
-                                    <li><a href="">Action直接访问ServletAPI</a></li>
-                                    <li><a href="">使用ServletActionContext访问ServletAPI</a></li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="#Struts-cfg-Action">3.6 配置Action </a>
-                                <ul>
-                                    <li><a href="">包和命名空间</a></li>
-                                    <li><a href="">Action的基本配置</a></li>
-                                    <li><a href="">使用Action的动态方法调用</a></li>
-                                    <li><a href="">指定method属性及使用通配符</a></li>
-                                    <li><a href="">配置默认Action</a></li>
-                                    <li><a href="">配置Action的默认处理类</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="#Struts-cfg-result">3.7 配置处理结果</a></li>
-                            <li><a href="#Struts-exception">3.8 配置Struts的异常处理</a></li>
-                            <li><a href="#Struts-convention">3.9 Convention插件与“约束”支持</a></li>
-                            <li><a href="#Struts-global">3.10 使用Struts的国际化</a></li>
-                            <li><a href="#Struts-tablib">3.11 Struts的标签库</a></li>
-                        </ul>
-                        <h3><a href="#Struts-deep-4">第肆章 深入学习Struts</a></h3>
-                        <ul>
-                            <li><a href="#Struts-conversion">4.1 Struts的类型转换</a></li>
-                            <li><a href="#Struts-check">4.2 Struts的输入校验</a></li>
-                            <li><a href="#Struts-control-upload">4.3 Struts控制上传文件</a></li>
-                            <li><a href="#Struts-control-download">4.4 Struts控制下载文件</a></li>
-                            <li><a href="#Struts-filter">4.5 Struts的拦截器</a></li>
-                            <li><a href="#Struts-ajax">4.6 Struts的Ajax支持</a></li>
-                        </ul>
-                        <h3><a href="#Hibernate-5">第伍章 Hibernate基本应用</a></h3>
-                        <ul>
-                            <li><a href="#Hibernate-ORM">5.1 ORM与Hibernate</a></li>
-                            <li><a href="#Hibernate-start">5.2 Hibernate入门</a></li>
-                            <li><a href="#Hibernate-architecture">5.3 Hibernate体系结构</a></li>
-                            <li><a href="#Hibernate-cfg">5.4 Hibernate配置</a></li>
-                            <li><a href="#Hibernate-persistence">5.5 持久化对象</a></li>
-                            <li><a href="#Hibernate-mapping">5.6 Hibernate映射</a></li>
-                            <li><a href="#Hibernate-mapping-components">5.7 映射组件属性</a></li>
-                            <li><a href="#Hibernate-ancient-mapping">5.8 使用传统的映射文件</a></li>
-                        </ul>
-                        <h3><a href="#Hibernate-deep-6">第陆章 深入学习Hibernate</a></h3>
-                        <ul>
-                            <li><a href="#Hibernate-relevance">6.1 Hibernate关联映射</a></li>
-                            <li><a href="#Hibernate-inherit">6.2 继承映射</a></li>
-                            <li><a href="#Hibernate-bathc-processing">6.3 Hibernate批量处理</a></li>
-                            <li><a href="#Hibernate-HQL">6.4 HQL语句查询</a></li>
-                            <li><a href="#Hibernate-search">6.5 查询条件</a></li>
-                            <li><a href="#Hibernate-SQL">6.6 SQL查询</a></li>
-                            <li><a href="#Hibernate-filter">6.7 数据过滤</a></li>
-                            <li><a href="#Hibernate-object">6.8 事务控制</a></li>
-                            <li><a href="#Hibernate-cache">6.9 二级缓存和查询缓存</a></li>
-                            <li><a href="#Hibernate-event">6.10 事件机制</a></li>
-                        </ul>
-                        <h3><a href="#Spring-7">第柒章 Spring基本应用</a></h3>
-                        <ul>
-                            <li><a href="#Spring-change">7.1 Spring 4.0的变化</a></li>
-                            <li><a href="#Spring-start">7.2 Spring入门</a></li>
-                            <li><a href="#Spring-de-injection">7.3 Spring依赖注入</a></li>
-                            <li><a href="#Spring-container">7.4 Spring容器</a></li>
-                            <li><a href="#Spring-bean">7.5 Spring容器中的Bean</a></li>
-                            <li><a href="#Spring-java-cfg">7.6 Spring 3.0提供的Java配置管理</a></li>
-                            <li><a href="#Spring-bean-method">7.7 Bean的三种创建方法</a></li>
-                            <li><a href="#Spring-deep-Bean">7.8 深入理解Bean</a></li>
-                            <li><a href="#Spring-bean-life">7.9 Bean的生命周期</a></li>
-                            <li><a href="#Spring-dependent-cfg">7.10 高级依赖关系配置</a></li>
-                            <li><a href="#Spring-schema">7.11 XML Schema的简化配置</a></li>
-                            <li><a href="#Spring-e-l">7.12 Spring 3.0提供的表达式语言</a></li>
-                        </ul>
-                        <h3><a href="#Spring-deep-8">第捌章 深入学习Spring</a></h3>
-                        <ul>
-                            <li><a href="#Spring-postprocessor">8.1 两种后处理器</a></li>
-                            <li><a href="#Spring-cfg">8.2 Spring的“零配置支持”</a></li>
-                            <li><a href="#Spring-resource">8.3 资源访问</a></li>
-                            <li><a href="#Spring-AOP">8.4 Spring的AOP</a></li>
-                            <li><a href="#Spring-cache">8.5 Spring 3.1新增的缓存机制</a></li>
-                            <li><a href="#Spring-object">8.6 Spring的事物</a></li>
-                            <li><a href="#Spring-Struts">8.7 Spring整合Struts 2</a></li>
-                            <li><a href="#Spring-Hibernate">8.8 Spring整合Hibernate</a></li>
-                            <li><a href="#Spring-JPA">8.9 Spring整合JPA</a></li>
-                        </ul>
-                        <h3><a href="#Developing-9">第玖章 企业应用开发的思路和策略</a></h3>
-                        <ul>
-                            <li><a href="#Developing-kinder">9.1 企业应用开发面临的挑战</a></li>
-                            <li><a href="#Developing-challenge">9.2 如何面对挑战</a></li>
-                            <li><a href="#Developing-design-pattern">9.3 常见的设计模式精讲</a></li>
-                            <li><a href="#Developing-framework">9.4 常见的架构设计策略</a></li>
-                            <li><a href="#Developing-summer">9.5 小结</a></li>
-                        </ul>
-                        <h3><a href="#Example-10">第拾章 简单工作流系统</a></h3>
-                        <ul>
-                            <li><a href="#Example-bg-Structure">10.1 项目背景及系统结构</a></li>
-                            <li><a href="#Example-Hibernate">10.2 Hibernate持久层</a></li>
-                            <li><a href="#Example-DAO">4.3 事项DAO</a></li>
-                            <li><a href="#Example-service">4.4 实现Service层</a></li>
-                            <li><a href="#Example-dispatch">10.5 实现任务的自动调度</a></li>
-                            <li><a href="#Example-view">10.6 实现系统Web层</a></li>
-                        </ul>
-                    </ul>
-                </li>
-            </ul>
-        </div>
-    </div>
-</nav>
-
-
 <header class="text-center"><h1>学习轻量级Java ＥＥ企业应用实战（第四版）<br/><kbd>Struts2+Hibernate+Spring4</kbd><small>笔记</small>
     <h4 class="text-danger">李刚编著</h4></h1></header>
 <div class="row">
@@ -251,8 +113,9 @@
                             <img src="../images/Java-EE/chapter-1/projectStructure.PNG" alt=""/>
                         </li>
                         <li>
-                            <kbd>User实体</kbd>
+                            <kbd>User实体</kbd>Struts2通常直接使用Action来封装HTTP请求，因此UserAction类需要包含与请求参数对应的实例变量的setter和getter方法（不一定需要这些实例变量）。
                             <div class="clearfix"></div>
+                            <img src="../images/Java-EE/chapter-1/url-parameter.PNG" alt=""/>
                             <p>
 <pre>
 package entity;
@@ -347,12 +210,136 @@ public class Login extends ActionSupport{
 
             <div id="Struts-cfg" class="col-sm-12">
                 <h3>3.4 Struts2的规范配置</h3>
-                <p>alkdfjdaiojlkdf；拉快点放假啦会计法阿里斯顿看风景啊啊了快点放假啊 了卡机的浪费空间  埃里克打飞机啊安抚就O(∩_∩)O哈哈~O(∩_∩)O哈哈~O(∩_∩)O哈哈~</p>
+                <p>
+                    <ol>
+                        <li>
+                            <kbd>分解Struts.xml文件</kbd>用Include将臃肿的Struts.xml分解成Struts-part1.xml、Struts-part2.xml。。。。。
+                            <div class="clearfix"></div>
+                            <img src="../images/Java-EE/chapter-1/struts.PNG" alt=""/>
+                        </li>
+                        <li>
+                            <kbd>包含的Struts-part1.xml文件</kbd>也需要配置DTD信息、Struts2配置文件的根元素。。。。
+                            <div class="clearfix"></div>
+                            <img src="../images/Java-EE/chapter-1/struts-part1.PNG" alt=""/>
+                        </li>
+                    </ol>
+                </p>
             </div>
 
             <div id="Struts-Action" class="col-sm-12">
                 <h3>3.5 Struts2 实现Action</h3>
-                <p>alkdfjdaiojlkdf；拉快点放假啦会计法阿里斯顿看风景啊啊了快点放假啊 了卡机的浪费空间  埃里克打飞机啊安抚就O(∩_∩)O哈哈~O(∩_∩)O哈哈~O(∩_∩)O哈哈~</p>
+                <p>
+                    <ol>
+                        <li>
+                            <kbd>
+                                Struts2的开发
+                            </kbd>
+                                各种Action是应用的核心，Struts.xml文件配置用户请求与Action之间的对应关系，Action里面包含了处理（又包含模型Model）逻辑。
+                                因此Acton类也被称为业务控制器。
+                        </li>
+                        <li>
+                            <kbd>实例变量可以封装请求参数和封装处理结果</kbd>如下的tip，封装提示语言----“Login Success!Welcome Lawrence”和“Login Error!”
+                            <div class="clearfix"></div>
+<pre>
+package servlet.action;
+import com.opensymphony.xwork2.ActionSupport;
+import entity.User;
+public class Login extends ActionSupport{
+	User user = new User();
+	private String tip;
+	public String getTip() {
+		return tip;
+	}
+	public void setTip(String tip) {
+		this.tip = tip;
+	}
+	public User getUser() {
+		return user;
+	}
+	public void setUser(User user) {
+		this.user = user;
+	}
+	public String execute() throws Exception{
+		if("Lawrence".equals(getUser().getUsername()) && "123".equals(getUser().getPassword())){
+			setTip("Login Success!Welcome "+getUser().getUsername());
+			System.out.println("success");
+			return SUCCESS;
+		}
+		setTip("Login Error!");
+		System.out.println("false");
+		return SUCCESS;
+	}
+}
+</pre>
+                        </li>
+                        <li>
+                            <kbd>Struts.xml配置</kbd>
+                            <div lass="clearfix"></div>
+                            <img src="../images/Java-EE/chapter-1/struts-tip.PNG" alt=""/>
+                        </li>
+                        <li>
+                            <kbd>引入Struts标签库</kbd>
+                            <div lass="clearfix"></div>
+                            <img src="../images/Java-EE/chapter-1/taglib.PNG" alt=""/>
+                        </li>
+                        <li>
+                            <kbd>只有Success.jsp页面</kbd>
+                            <div lass="clearfix"></div>
+                            <img src="../images/Java-EE/chapter-1/tip-property.PNG" alt=""/>
+                        </li>
+                        <li>
+                            <kbd>正确输入</kbd>用户名：Lawrence 密码：123
+                            <div class="clearfix"></div>
+                            <img src="../images/Java-EE/chapter-1/tip-success.PNG" alt=""/>
+                        </li>
+                        <li>
+                            <kbd>错误输入</kbd>用户名：Lawrence 密码：null
+                            <div class="clearfix"></div>
+                            <img src="../images/Java-EE/chapter-1/tip-error.PNG" alt=""/>
+                        </li>
+                    </ol>
+                </p>
+                <p>
+                    <ol>
+                        <li>
+                            <kbd>通过ActionContext访问ServletAPI（松耦合、解耦）</kbd>ActionContext常用方法<br/>
+                            <kbd>static ActionCotext getContext():</kbd>静态方法，获取系统的ActionContext实例。<code>ActionContext ctx = ActionContext.getContext();</code><br/>
+                            <kbd>Map getApplication:</kbd>模拟该应用的ServletContext实例。<br/>
+                            <kbd>Object get(object key):</kbd>获得Put()<code>ctx.getApplication().put("counter",counter);</code>进去（session/request）的Map值<code>ctx.getApplication().get("counter")</code><br/>
+                            <kbd>Map getSession():</kbd>模拟HttpSession实例。<code>ctx.getSession().put("user",getUsername());</code><br/>
+                            <kbd>Map put(key value):</kbd>Put("counter",counter)一个Map值。<br/>
+                            <kbd>Map get():</kbd>Get("counter")一个Map值。<br/>
+                            <kbd>Map setSession(Map session):</kbd>直接传入一个Map实例，并转换为session()的属性值-属性名。<br/>
+                            <div class="clearfix"></div>
+                            <img src="../images/Java-EE/chapter-1/getParameter.PNG" alt=""/>
+                            <kbd>Map setApplication:</kbd>直接传入一个Map实例，并转换为application()的属性值-属性名。<br/>
+                            <kbd>Map getParameters():</kbd><code>获取所有的请求参数，类似HttpServletRequest().getParameterMap();</code><br/>
+                            <div class="clearfix"></div>
+                            <img src="../images/Java-EE/chapter-1/ActionContext.PNG" alt=""/>
+                        </li>
+                        <li>
+                            <kbd>成功页面代码</kbd>
+                            <div class="clearfix"></div>
+                            <img src="../images/Java-EE/chapter-1/ActionContext.PNG" alt=""/>
+                        </li>
+                        <li>
+                            <kbd>成功页面结果</kbd>但不知道为什么<code>ctx.put("prompt","value")</code>没有岀来。
+                            <div class="clearfix"></div>
+                                <img src="../images/Java-EE/chapter-1/ActionContext-result.PNG" alt=""/>
+                        </li>
+                        <li>
+                            <kbd>添加prompt的setter和getter方法就好了</kbd>
+                            <div class="clearfix"></div>
+                            <img src="../images/Java-EE/chapter-1/prompt.PNG" alt=""/>
+                             <img src="../images/Java-EE/chapter-1/prompt-set.PNG" alt=""/>
+                        </li>
+                        <li>
+                            <kbd>成功页面结果</kbd>
+                            <div class="clearfix"></div>
+                            <img src="../images/Java-EE/chapter-1/setPrompt-result.PNG" alt=""/>
+                        </li>
+                    </ol>
+                </p>
             </div>
 
             <div id="Struts-cfg-Action" class="col-sm-12">
