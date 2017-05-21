@@ -1,9 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-T255HGX');</script>
+    <!-- End Google Tag Manager -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+    <meta name="google-site-verification" content="YvixHwcGP8pYEW6dm2xLXB5cp8Whh9hZxNFX48qEKyI" />
     <link rel="fluid-icon" href="favicon.ico" />
     <link rel="apple-touch-icon" href="../images/favicon.png">
     <link rel="icon" sizes="32x32" type="image/png" href="../images/favicon.png">
@@ -14,8 +22,8 @@
 
 </head>
 <body class="container">
-<header class="text-center"><h1>学习轻量级Java ＥＥ企业应用实战（第四版）<br/><kbd>Struts2+Hibernate+Spring4</kbd><small>笔记</small>
-    <h4 class="text-danger">李刚编著</h4></h1></header>
+<header class="text-center"><h1>学习轻量级Java ＥＥ企业应用实战（第四版）<br/><kbd>Struts2+Hibernate+Spring4</kbd><small>笔记</small></h1>
+    <h4 class="text-danger">李刚编著</h4></header>
 <div class="row">
     <div class="col-sm-9 col-md-9 col-lg-9">
         <div class="row">
@@ -29,13 +37,13 @@
                         <ol>
                             <li>
                                 <kbd>MVC的思想：将应用中各级组件按功能分类，不同的组件用不同的技术充当，使用严格的分层，各层以松耦合组织在一起，从而提供良好的封装。</kbd>
-                                <h4><div class="text-private">来两张图</div></h4>
-                                <img src="../images/Java-EE/chapter-1/MVC.jpg" width="500" height="300" alt=""/><div class="clearfix"></div>
+                                <h4><i class="text-private">来两张图</i></h4>
+                                <img src="../images/Java-EE/chapter-1/MVC.jpg" width="500" height="300" alt="" class="img-responsive img-thumbnail"/><div class="clearfix"></div>
                                 解释一下：<br/>
                                 模型：连接（查询、增加、删除、修改）数据库的一些方法（函数）或其他方法（函数）。如连接Hibernate，SQL数据库的函数形成Model。
 
 
-                                <img src="../images/Java-EE/chapter-1/MVC-ssh.jpg" width="500" height="300" alt=""/><div class="clearfix"></div>
+                                <img src="../images/Java-EE/chapter-1/MVC-ssh.jpg" width="500" height="300" alt="" class="img-responsive img-thumbnail"/><div class="clearfix"></div>
                                 这张图片更好的说明SSH框架的Struts2 Hibernate Spring4的作用<br/>
                                 <kbd>Struts2：</kbd>
                                 1.充当Controller，把多个视图和对应的Action注册到Struts.xml中，其中Action就负责连接
@@ -56,12 +64,12 @@
                 <li><h4>3.2.1 下载地址</h4>
                     <ol><li>
                         <kbd>下载地址：</kbd>http://struts.apache.org/download.cgi<br/>
-                        <img src="../images/Java-EE/chapter-1/struts-download.PNG" alt=""/>
+                        <img src="../images/Java-EE/chapter-1/struts-download.PNG" alt="" class="img-responsive img-thumbnail"/>
                         <div class="clearfix"></div>
                         <h4 class="glyphicon glyphicon-info-sign">介绍</h4>
                         <ul>
                             <li><kbd>Full Distribution：</kbd>完整版：示例应用、空示例应用、核心库、源代码和文档。
-                                <img src="../images/Java-EE/chapter-1/FullDistribute.PNG" alt=""/>
+                                <img src="../images/Java-EE/chapter-1/FullDistribute.PNG" alt="" class="img-responsive img-thumbnail"/>
                                 <ul>
                                     <li><kbd>apps：</kbd>示例应用很多像Struts.xml和Hibernate.cfg.xml都可以在里面找到。</li>
                                     <li><kbd>docs：</kbd>快速入门、文档、API文档。</li>
@@ -71,7 +79,7 @@
                             </li>
                             <li><kbd>Example Applications：</kbd>示例应用。</li>
                             <li><kbd>Essential Dependencies Only：</kbd>仅包含五个Struts核心库。一般开发就够了。
-                                <img src="../images/Java-EE/chapter-1/EssentialDepentdenciesOnly.PNG" alt=""/>
+                                <img src="../images/Java-EE/chapter-1/EssentialDepentdenciesOnly.PNG" alt="" class="img-responsive img-thumbnail"/>
                             </li>
                             <li><kbd>Documentation:完整版：</kbd>Struts使用文档、参考手册、API文档。</li>
                             <li><kbd>Source：</kbd>源代码。</li>
@@ -90,47 +98,47 @@
                         <ol>
                             <li><kbd>File-->New-->Web Project：注意配置版本</kbd>
                                 <div class="clearfix"></div>
-                                <img src="../images/Java-EE/chapter-1/new-web-project.PNG" alt=""/>
+                                <img src="../images/Java-EE/chapter-1/new-web-project.PNG" alt="" class="img-responsive img-thumbnail"/>
                             </li>
                             <li>
                                 <kbd>WebRoot--》WEBINF--》添加content，并将index.jsp移入</kbd>这里很重要。
                                 <div class="clearfix"></div>
-                                <img src="../images/Java-EE/chapter-1/addContent.PNG" alt=""/>
+                                <img src="../images/Java-EE/chapter-1/addContent.PNG" alt="" class="img-responsive img-thumbnail"/>
                             </li>
                             <li>
                                 <kbd>点中文件名New--》MyEclipse-->Project Facets--》InstallApache Struts（2.*）添加Struts.xml和web.xml配置文件</kbd>这里没有（2.*是因为我已添加），你也可以在解压apps里面的示例
                                 <div class="clearfix"></div>
-                                <img src="../images/Java-EE/chapter-1/addStruts.jpg" width="100%" alt=""/>
+                                <img src="../images/Java-EE/chapter-1/addStruts.jpg" width="100%" alt="" class="img-responsive img-thumbnail"/>
                             </li>
                             <li>
                                 <kbd>去掉Struts类库</kbd>
                                 <div class="clearfix"></div>
-                                <img src="../images/Java-EE/chapter-1/removeStruts.PNG" alt=""/>
+                                <img src="../images/Java-EE/chapter-1/removeStruts.PNG" alt="" class="img-responsive img-thumbnail"/>
                             </li>
                             <li>
                                 <kbd>删除web.xml下的(.ng)</kbd>
                                 <div class="clearfix"></div>
-                                <img src="../images/Java-EE/chapter-1/removeNg.PNG" alt=""/>
+                                <img src="../images/Java-EE/chapter-1/removeNg.PNG" alt="" class="img-responsive img-thumbnail"/>
                             </li>
                             <li>
                                 <kbd>将Essential Dependencis Only中的核心类库添加到lib下</kbd>
                                 <div class="clearfix"></div>
-                                <img src="../images/Java-EE/chapter-1/addLib.PNG" alt=""/>
+                                <img src="../images/Java-EE/chapter-1/addLib.PNG" alt="" class="img-responsive img-thumbnail"/>
                             </li>
                             <li>
                                 <kbd>设置UTF-8中文编码</kbd>
                                 <div class="clearfix"></div>
-                                <img src="../images/Java-EE/chapter-1/utf-8.PNG" alt=""/>
+                                <img src="../images/Java-EE/chapter-1/utf-8.PNG" alt="" class="img-responsive img-thumbnail"/>
                             </li>
                             <li>
                                 <kbd>项目结构</kbd>
                                 <div class="clearfix"></div>
-                                <img src="../images/Java-EE/chapter-1/projectStructure.PNG" alt=""/>
+                                <img src="../images/Java-EE/chapter-1/projectStructure.PNG" alt="" class="img-responsive img-thumbnail"/>
                             </li>
                             <li>
                                 <kbd>User实体</kbd>Struts2通常直接使用Action来封装HTTP请求，因此UserAction类需要包含与请求参数对应的实例变量的setter和getter方法（不一定需要这些实例变量）。
                                 <div class="clearfix"></div>
-                                <img src="../images/Java-EE/chapter-1/url-parameter.PNG" alt=""/>
+                                <img src="../images/Java-EE/chapter-1/url-parameter.PNG" alt="" class="img-responsive img-thumbnail"/>
 <pre>
 package entity;
 public class User {
@@ -183,7 +191,7 @@ public class Login extends ActionSupport{
                             <li>
                                 <kbd>index.jsp登录页面</kbd>
                                 <div class="clearfix"></div>
-                                <img src="../images/Java-EE/chapter-1/index.PNG" alt=""/>
+                                <img src="../images/Java-EE/chapter-1/index.PNG" alt="" class="img-responsive img-thumbnail"/>
                             </li>
                             <li>
                                 <kbd>success.jsp登录成功页面</kbd>
@@ -193,27 +201,27 @@ public class Login extends ActionSupport{
                             <li>
                                 <kbd>false.jsp登录失败页面</kbd>
                                 <div class="clearfix"></div>
-                                <img src="../images/Java-EE/chapter-1/false.PNG" alt=""/>
+                                <img src="../images/Java-EE/chapter-1/false.PNG" alt="" class="img-responsive img-thumbnail"/>
                             </li>
                             <li>
                                 <kbd>配置Struts</kbd>
                                 <div class="clearfix"></div>
-                                <img src="../images/Java-EE/chapter-1/struts-cfg.PNG" alt=""/>
+                                <img src="../images/Java-EE/chapter-1/struts-cfg.PNG" alt="" class="img-responsive img-thumbnail"/>
                             </li>
                             <li>
                                 <kbd>装入Tamcat 8里面并运行</kbd>用户名：Lawrence 密码：123
                                 <div class="clearfix"></div>
-                                <img src="../images/Java-EE/chapter-1/browser-index.PNG" alt=""/>
+                                <img src="../images/Java-EE/chapter-1/browser-index.PNG" alt="" class="img-responsive img-thumbnail"/>
                             </li>
                             <li>
                                 <kbd>正确输入</kbd>用户名：Lawrence 密码：123
                                 <div class="clearfix"></div>
-                                <img src="../images/Java-EE/chapter-1/browser-success.PNG" alt=""/>
+                                <img src="../images/Java-EE/chapter-1/browser-success.PNG" alt="" class="img-responsive img-thumbnail"/>
                             </li>
                             <li>
                                 <kbd>错误输入</kbd>用户名：Lawrence 密码：null
                                 <div class="clearfix"></div>
-                                <img src="../images/Java-EE/chapter-1/browser-false.PNG" alt=""/>
+                                <img src="../images/Java-EE/chapter-1/browser-false.PNG" alt="" class="img-responsive img-thumbnail"/>
                             </li>
                         </ol>
                     </li>
@@ -229,12 +237,12 @@ public class Login extends ActionSupport{
                             <li>
                                 <kbd>分解Struts.xml文件</kbd>用Include将臃肿的Struts.xml分解成Struts-part1.xml、Struts-part2.xml。。。。。
                                 <div class="clearfix"></div>
-                                <img src="../images/Java-EE/chapter-1/struts.PNG" alt=""/>
+                                <img src="../images/Java-EE/chapter-1/struts.PNG" alt="" class="img-responsive img-thumbnail"/>
                             </li>
                             <li>
                                 <kbd>包含的Struts-part1.xml文件</kbd>也需要配置DTD信息、Struts2配置文件的根元素。。。。
                                 <div class="clearfix"></div>
-                                <img src="../images/Java-EE/chapter-1/struts-part1.PNG" alt=""/>
+                                <img src="../images/Java-EE/chapter-1/struts-part1.PNG" alt="" class="img-responsive img-thumbnail"/>
                             </li>
                         </ol>
                     </li>
@@ -292,28 +300,28 @@ public class Login extends ActionSupport{
                             </li>
                             <li>
                                 <kbd>Struts.xml配置</kbd>
-                                <div lass="clearfix"></div>
-                                <img src="../images/Java-EE/chapter-1/struts-tip.PNG" alt=""/>
+                                <div class="clearfix"></div>
+                                <img src="../images/Java-EE/chapter-1/struts-tip.PNG" alt="" class="img-responsive img-thumbnail"/>
                             </li>
                             <li>
                                 <kbd>引入Struts标签库</kbd>
-                                <div lass="clearfix"></div>
-                                <img src="../images/Java-EE/chapter-1/taglib.PNG" alt=""/>
+                                <div class="clearfix"></div>
+                                <img src="../images/Java-EE/chapter-1/taglib.PNG" alt="" class="img-responsive img-thumbnail"/>
                             </li>
                             <li>
                                 <kbd>只有Success.jsp页面</kbd>
-                                <div lass="clearfix"></div>
-                                <img src="../images/Java-EE/chapter-1/tip-property.PNG" alt=""/>
+                                <div class="clearfix"></div>
+                                <img src="../images/Java-EE/chapter-1/tip-property.PNG" alt="" class="img-responsive img-thumbnail"/>
                             </li>
                             <li>
                                 <kbd>正确输入</kbd>用户名：Lawrence 密码：123
                                 <div class="clearfix"></div>
-                                <img src="../images/Java-EE/chapter-1/tip-success.PNG" alt=""/>
+                                <img src="../images/Java-EE/chapter-1/tip-success.PNG" alt="" class="img-responsive img-thumbnail"/>
                             </li>
                             <li>
                                 <kbd>错误输入</kbd>用户名：Lawrence 密码：null
                                 <div class="clearfix"></div>
-                                <img src="../images/Java-EE/chapter-1/tip-error.PNG" alt=""/>
+                                <img src="../images/Java-EE/chapter-1/tip-error.PNG" alt="" class="img-responsive img-thumbnail"/>
                             </li>
                         </ol>
                     </li>
@@ -329,36 +337,36 @@ public class Login extends ActionSupport{
                                 <kbd>Map get():</kbd>Get("counter")一个Map值。<br/>
                                 <kbd>Map setSession(Map session):</kbd>直接传入一个Map实例，并转换为session()的属性值-属性名。<br/>
                                 <div class="clearfix"></div>
-                                <img src="../images/Java-EE/chapter-1/getParameter.PNG" alt=""/>
+                                <img src="../images/Java-EE/chapter-1/getParameter.PNG" alt="" class="img-responsive img-thumbnail"/>
                                 <kbd>Map setApplication:</kbd>直接传入一个Map实例，并转换为application()的属性值-属性名。<br/>
                                 <kbd>Map getParameters():</kbd><code>获取所有的请求参数，类似HttpServletRequest().getParameterMap();</code><br/>
                                 <div class="clearfix"></div>
-                                <img src="../images/Java-EE/chapter-1/ActionContext.PNG" alt=""/>
+                                <img src="../images/Java-EE/chapter-1/ActionContext.PNG" alt="" class="img-responsive img-thumbnail"/>
                             </li>
                             <li>
                                 <kbd>成功页面代码</kbd>
                                 <div class="clearfix"></div>
-                                <img src="../images/Java-EE/chapter-1/ActionContext.PNG" alt=""/>
+                                <img src="../images/Java-EE/chapter-1/ActionContext.PNG" alt="" class="img-responsive img-thumbnail"/>
                             </li>
                             <li>
                                 <kbd>成功页面结果</kbd>但不知道为什么<code>ctx.put("prompt","value")</code>没有岀来。
                                 <div class="clearfix"></div>
-                                <img src="../images/Java-EE/chapter-1/ActionContext-result.PNG" alt=""/>
+                                <img src="../images/Java-EE/chapter-1/ActionContext-result.PNG" alt="" class="img-responsive img-thumbnail"/>
                             </li>
                             <li>
                                 <kbd>添加prompt的setter和getter方法就好了</kbd>
                                 <div class="clearfix"></div>
-                                <img src="../images/Java-EE/chapter-1/prompt.PNG" alt=""/>
-                                <img src="../images/Java-EE/chapter-1/prompt-set.PNG" alt=""/>
+                                <img src="../images/Java-EE/chapter-1/prompt.PNG" alt="" class="img-responsive img-thumbnail"/>
+                                <img src="../images/Java-EE/chapter-1/prompt-set.PNG" alt="" class="img-responsive img-thumbnail"/>
                             </li>
                             <li>
                                 <kbd>成功页面结果</kbd>
                                 <div class="clearfix"></div>
-                                <img src="../images/Java-EE/chapter-1/setPrompt-result.PNG" alt=""/>
+                                <img src="../images/Java-EE/chapter-1/setPrompt-result.PNG" alt="" class="img-responsive img-thumbnail"/>
                             </li>
                         </ol>
                     </li>
-                    <li><h4> ServletRequestAware、ServletResponseAware、ServletContextAware接口直接来访问 Servlet API ( 紧耦合 )</h4>
+                    <li><h4>3.5.3 ServletRequestAware、ServletResponseAware、ServletContextAware接口直接来访问 Servlet API ( 紧耦合 )</h4>
                         <ol>
                             <li>
                                 <kbd>通过 ServletRequestAware、ServletResponseAware、ServletContextAware接口直接来访问 Servlet API ( 紧耦合 )</kbd><br/>
@@ -427,23 +435,23 @@ public class Login extends ActionSupport{
     }
 </pre>
                                 <div class="clearfix"></div>
-                                <img src="../images/Java-EE/chapter-1/HttpServletResponse.PNG" alt=""/>
+                                <img src="../images/Java-EE/chapter-1/HttpServletResponse.PNG" alt="" class="img-responsive img-thumbnail"/>
                                 <div class="clearfix"></div>
-                                <img src="../images/Java-EE/chapter-1/cookie.PNG" alt=""/>
+                                <img src="../images/Java-EE/chapter-1/cookie.PNG" alt="" class="img-responsive img-thumbnail"/>
                             </li>
                             <li>
                                 <kbd>成功页面</kbd>
                                 <div class="clearfix"></div>
-                                <img src="../images/Java-EE/chapter-1/HttpServletResponse-addCookie-success.PNG" alt=""/>
+                                <img src="../images/Java-EE/chapter-1/HttpServletResponse-addCookie-success.PNG" alt="" class="img-responsive img-thumbnail"/>
                             </li>
                             <li>
                                 <kbd>演示结果</kbd>
                                 <div class="clearfix"></div>
-                                <img src="../images/Java-EE/chapter-1/cookie-result.PNG" alt=""/>
+                                <img src="../images/Java-EE/chapter-1/cookie-result.PNG" alt="" class="img-responsive img-thumbnail"/>
                             </li>
                         </ol>
                     </li>
-                    <li><h4>3.6.4 ServletActonContext接口来直接访问 Servlet API ( 紧耦合 )</h4>
+                    <li><h4>3.5.4 ServletActonContext接口来直接访问 Servlet API ( 紧耦合 )</h4>
                         <ol>
                             <li>
                                 <kbd>通过 ServletActonContext接口来直接访问 Servlet API ( 紧耦合 )</kbd><br/>
@@ -454,18 +462,18 @@ public class Login extends ActionSupport{
                                 <kbd>static ServletContext getServletContext():</kbd>取得Web应用的ServletContext对象。<br/>
                                 <i class="glyphicon glyphicon-edit"></i> ServletActionContext.getResponse().addCookie();为例为系统添加Cookie对象，使用上面的登录系统。
                                 <div class="clearfix"></div>
-                                <img src="../images/Java-EE/chapter-1/servletActionContext-cookie.PNG" alt=""/>
+                                <img src="../images/Java-EE/chapter-1/servletActionContext-cookie.PNG" alt="" class="img-responsive img-thumbnail"/>
                                 <div class="clearfix"></div>
-                                <img src="../images/Java-EE/chapter-1/ServletActionContext-getResponse-cookie.PNG" alt=""/>
+                                <img src="../images/Java-EE/chapter-1/ServletActionContext-getResponse-cookie.PNG" alt="" class="img-responsive img-thumbnail"/>
                             </li>
                             <li>
                                 <kbd>演示结果</kbd>
                                 <div class="clearfix"></div>
-                                <img src="../images/Java-EE/chapter-1/ServletActionContext-getResponse-cookie-success.PNG" alt=""/>
+                                <img src="../images/Java-EE/chapter-1/ServletActionContext-getResponse-cookie-success.PNG" alt="" class="img-responsive img-thumbnail"/>
                             </li>
                         </ol>
                     </li>
-                    <li><h4>3.6.5 RequestAware、SessionAware 接口来直接访问 Servlet API ( 解耦 )</h4>
+                    <li><h4>3.5.5 RequestAware、SessionAware 接口来直接访问 Servlet API ( 解耦 )</h4>
                         <ol>
                             <li>
                                 <kbd>通过 RequestAware、SessionAware 接口来直接访问 Servlet API ( 松耦合、解耦 )</kbd><br/>
@@ -474,23 +482,18 @@ public class Login extends ActionSupport{
                                 <kbd>Action implements SessionAware:</kbd>取得Web应用的HttpServletSession对象。<br/>
                                 <i class="glyphicon glyphicon-edit"></i> SessionAware为例为系统添加Cookie对象，使用上面的登录系统。
                                 <div class="clearfix"></div>
-                                <img src="../images/Java-EE/chapter-1/sessionWare.PNG" alt=""/>
+                                <img src="../images/Java-EE/chapter-1/sessionWare.PNG" alt="" class="img-responsive img-thumbnail"/>
                                 <div class="clearfix"></div>
-                                <img src="../images/Java-EE/chapter-1/sessionWare-putUser.PNG" alt=""/>
+                                <img src="../images/Java-EE/chapter-1/sessionWare-putUser.PNG" alt="" class="img-responsive img-thumbnail"/>
                             </li>
                             <li>
                                 <kbd>演示结果</kbd>
                                 <div class="clearfix"></div>
-                                <img src="../images/Java-EE/chapter-1/sessionWare-success.PNG" alt=""/>
+                                <img src="../images/Java-EE/chapter-1/sessionWare-success.PNG" alt="" class="img-responsive img-thumbnail"/>
                             </li>
                         </ol>
                     </li>
                 </ol>
-                            </li>
-                        </ol>
-                    </li>
-                </ol>
-            </p>
             </div>
 
             <div id="Struts-cfg-Action" class="col-sm-12">
@@ -511,57 +514,122 @@ public class Login extends ActionSupport{
                             <kbd>命名空间（namespace）</kbd><br/>
                             <p class="red">介绍一下</p>
                             <kbd>缺省包(namespace="")</kbd>缺省包，默认包，当任何一种包（如下面三种之一）里找不到目标Action时，就转到缺省包里找目标Action或目标JSP页面<br/>
+                            <div class="clearfix"></div><br/>
+                            <img src="../images/Java-EE/chapter-1/namespace-default.PNG" alt="" class="img-responsive img-thumbnail"/><br/>
+                            <kbd>根命名空间 (namespace="/")</kbd>
                             <div class="clearfix"></div>
-                            <img src="../images/Java-EE/chapter-1/namespace-default.PNG" alt=""/>
-                            <kbd>根命名空间 (namespace="/")</kbd><br/>
+                            <img src="../images/Java-EE/chapter-1/namespace-root.PNG" alt="" class="img-responsive img-thumbnail"/><br/>
+                            <kbd>regist(namespace="/regist")</kbd>
                             <div class="clearfix"></div>
-                            <img src="../images/Java-EE/chapter-1/namespace-root.PNG" alt=""/>
-                            <kbd>regist(namespace="/regist")</kbd><br/>
+                            <img src="../images/Java-EE/chapter-1/namespace-regist.PNG" alt="" class="img-responsive img-thumbnail"/><br/>
+                            <kbd>book(namespace="/bookservice/search")</kbd>
                             <div class="clearfix"></div>
-                            <img src="../images/Java-EE/chapter-1/namespace-regist.PNG" alt=""/>
-                            <kbd>book(namespace="/bookservice/search")</kbd><br/>
-                            <div class="clearfix"></div>
-                            <img src="../images/Java-EE/chapter-1/namespace-book.PNG" alt=""/>
+                            <img src="../images/Java-EE/chapter-1/namespace-book.PNG" alt="" class="img-responsive img-thumbnail"/><br/>
                         </li>
                     </ol>
                 </li>
-                <li><h4>3.6.2Action的基本配置</h4>
+                <li><h4>3.6.2 Action的基本配置</h4>
                     <ol>
                         <li>
-                            <kbd></kbd><br/>
+                            <kbd>Action 一个逻辑控制器，指定Action处理完后的视图资源。</kbd><br/>
                             <p class="red">介绍一下</p>
-                            <kbd></kbd><br/>
-                            <kbd></kbd><br/>
-                            <i class="glyphicon glyphicon-edit"></i>
+                            <kbd>name</kbd>Action名<br/>
+                            <kbd>method</kbd>Action里的具体方法，动态调用很重要（*通配符）。<br/>
+                            <kbd>class</kbd>Action所以处理的请求的URL，一般配置如下图：<br/>
                             <div class="clearfix"></div>
-                            <img src="../images/Java-EE/" alt=""/>
+                            <img src="../images/Java-EE/chapter-1/struts-cfg.PNG" alt="" class="img-responsive img-thumbnail"/>
+                        </li>
+                    </ol>
+                </li>
+                <li><h4>3.6.3 Action的动态方法调用</h4>
+                    <ol>
+                        <li>
+                            <kbd>Struts2的动态调用方法存在安全问题</kbd>，尽量少用。可以用下一节3.6.4的通配符。<br/>
+                        </li>
+                        <li>
+                            <kbd>设置动态方法调用常量</kbd>在struts里加图中黄色代码<br/>allowed-methods是配置允许动态调用的方法，如这里的regist
                             <div class="clearfix"></div>
-                            <img src="../images/Java-EE/chapter-1/" alt=""/>
+                            <img src="../images/Java-EE/chapter-1/struts-dynamic.PNG" alt="" class="img-responsive img-thumbnail"/>
+                        </li>
+                        <li>
+                            <kbd>动态调用的regist方法</kbd>
+                            <div class="clearfix"></div>
+                            <img src="../images/Java-EE/chapter-1/dynamic-invocation-regist.PNG" alt="" class="img-responsive img-thumbnail"/>
+                        </li>
+                        <li>
+                            <kbd>动态调用的javascript页面</kbd>
+                            <div class="clearfix"></div>
+                            <img src="../images/Java-EE/chapter-1/dynamic-invocation-js.PNG" alt="" class="img-responsive img-thumbnail"/>
                         </li>
                         <li>
                             <kbd>演示结果</kbd>
                             <div class="clearfix"></div>
-                            <img src="../images/Java-EE/chapter-1/" alt=""/>
+                            <img src="../images/Java-EE/chapter-1/dynamic-invocation.PNG" alt="" class="img-responsive img-thumbnail"/>
+                        </li>
+                        <li>
+                            <p class="red">注意</p>下面actionName!methodName中actionName是 <code>&lt;action name="actionName"&gt;&lt;/action&gt;</code>中的名字，而不是具体的处理类的名字（class="servlet.Login.class"）
+                            <div class="clearfix"></div>
+                            <img src="../images/Java-EE/chapter-1/tip.PNG" alt="" class="img-responsive img-thumbnail"/>
                         </li>
                     </ol>
                 </li>
-                <li><h4>3.6.3Action的基本配置</h4>
+                <li><h4>3.6.4 指定method属性及使用通配符</h4>
                     <ol>
                         <li>
-                            <kbd></kbd><br/>
-                            <p class="red">介绍一下</p>
-                            <kbd></kbd><br/>
-                            <kbd></kbd><br/>
-                            <i class="glyphicon glyphicon-edit"></i>
+                            <kbd>*号通配符</kbd>*+字母--形成ActionName或ClassName，有ID的含义，不能重复。匹配时要加（字母）才能匹配上。如下：
                             <div class="clearfix"></div>
-                            <img src="../images/Java-EE/" alt=""/>
-                            <div class="clearfix"></div>
-                            <img src="../images/Java-EE/chapter-1/" alt=""/>
+                            <img src="../images/Java-EE/chapter-1/dynamic-invocation-method-index.PNG" alt="" class="img-responsive img-thumbnail"/>
                         </li>
                         <li>
-                            <kbd>演示结果</kbd>
+                        <kbd>需要开启（动态方法调用）</kbd>如下图的1，2。action的名字是（*+Action）
+                        <div class="clearfix"></div>
+                        <img src="../images/Java-EE/chapter-1/dynamic-invocation-struts.PNG" alt="" class="img-responsive img-thumbnail"/>
+                        </li>
+                        <li>
+                            <kbd>method匹配</kbd>取的是｛*},所以Action中的方法名为*（login,regist）
                             <div class="clearfix"></div>
-                            <img src="../images/Java-EE/chapter-1/" alt=""/>
+                            <img src="../images/Java-EE/chapter-1/dynamic-invocation-method-Action.PNG" alt="" class="img-responsive img-thumbnail"/>
+                        </li>
+                        <li>
+                            <kbd>method匹配成功页面</kbd>
+                            <div class="clearfix"></div>
+                            <img src="../images/Java-EE/chapter-1/dynamic-invocation.PNG" alt="" class="img-responsive img-thumbnail"/>
+                            <div class="clearfix"></div>
+                            <img src="../images/Java-EE/chapter-1/dynamic-invocation-login-success.PNG" alt="" class="img-responsive img-thumbnail"/>
+                        </li>
+                        <li>
+                            <p class="red">注意 1</p>不可以在Action的｛{},｛MethodName｝，｛ClassName｝，｛MethodName，ClassName ｝｝使用*通配符。如下：
+                            <div class="clearfix"></div>
+                            <img src="../images/Java-EE/chapter-1/wildcard.PNG" alt="" class="img-responsive img-thumbnail"/>
+                        </li>
+                        <li>
+                            <p class="red">注意 2</p>不要让超链接直接链接到某视图资源，有风险。尽量发送给Struts2框架后，让Struts2框架处理。
+                        </li>
+                        <li>
+                            <kbd>对abcAction.action请求，有Action的Name为（顺序为）｛｛abcAction｝，｛*Action｝，｛*｝｝。肯定是被abcAction处理，
+                                那要是｛｛*Action｝，｛*｝，｛abcAction｝｝或｛｛*Action｝，｛*｝，｛abcAction｝｝又会被那个处理呢？
+                            </kbd>
+                            <p><i class="glyphicon glyphicon-ok"></i><span class="red">答案是</span>*Action和*没有优先级之分，谁在前谁先匹配。因此它们的先后顺序为｛｛abcAction｝，｛*Action｝，｛*｝｝</p>
+                        </li>
+                    </ol>
+                </li>
+                <li><h4>3.6.5 配置默认Action</h4>
+                    <ol>
+                        <li>
+                            <kbd>添加自己的默认Action</kbd>准备做一个例子的，太菜了。我也很无奈啊！
+                            <div class="clearfix"></div>
+                            <img src="../images/Java-EE/chapter-1/default-action.PNG" alt="" class="img-responsive img-thumbnail"/>
+                            <img src="../images/Java-EE/chapter-1/default-action-action.PNG" alt="" class="img-responsive img-thumbnail"/>
+                            <img src="../images/Java-EE/chapter-1/default-action-jsp.PNG" alt="" class="img-responsive img-thumbnail"/>
+                        </li>
+                    </ol>
+                </li>
+                <li><h4>3.6.6 配置默认class处理类</h4>
+                    <ol>
+                        <li>
+                            <kbd>添加自己的默认Action</kbd>准备做一个例子的，太菜了。我也很无奈啊！
+                            <div class="clearfix"></div>
+                            <img src="../images/Java-EE/chapter-1/default-class-s.PNG" alt="" class="img-responsive img-thumbnail"/>
                         </li>
                     </ol>
                 </li>
@@ -571,17 +639,257 @@ public class Login extends ActionSupport{
 
             <div id="Struts-cfg-result" class="col-sm-12">
                 <h3>3.7 配置处理结果</h3>
-                <p>alkdfjdaiojlkdf；拉快点放假啦会计法阿里斯顿看风景啊啊了快点放假啊 了卡机的浪费空间  埃里克打飞机啊安抚就O(∩_∩)O哈哈~O(∩_∩)O哈哈~O(∩_∩)O哈哈~</p>
+                <p>
+            <ol type="A">
+                <li><h4>3.7.1 理解Struts的处理流程</h4>
+                    <ol>
+                        <li>
+                            <h2 class="text-center">理解Struts的处理流程</h2>
+                            <div class="clearfix"></div>图一<br/>
+                            <img src="../images/Java-EE/chapter-1/struts-process.jpg" alt="" class="img-responsive img-thumbnail"/>
+                            <div class="clearfix"></div>图二<br/>
+                            <img src="../images/Java-EE/chapter-1/filterDispatcher.PNG" alt="" class="img-responsive img-thumbnail"/>
+                            <div class="clearfix"></div>图三<br/>
+                            <img src="../images/Java-EE/chapter-1/struts-cfg.PNG" alt="" class="img-responsive img-thumbnail"/>
+                            <p>
+                                &nbsp;&nbsp;&nbsp;&nbsp;如图一MVC就是（5）Model（组件：对数据库的增删改查的封装方法class类，和其它具体Project的业务逻辑方法）
+                                （6）View（Jsp、FreeMarker等等物理视图资源）（2）Controlor（控制器：框架内部的控制流程和处理机制。如对网站的保护、对Struts.xml控制等等）,
+                                控制器在web.xml中配置。Struts2的核心控制器为FilterDispatcher，如图二。<br/>
+                                &nbsp;&nbsp;&nbsp;&nbsp;<i class="red">介绍一下</i><br/>
+                                <kbd>1User</kbd>用户，它可以直接发送请求（HttpServlet Request）或点击各种业务按钮来间接发送请求（HttpServlet Request）。<br/>
+                                <kbd>2控制器</kbd>图二的FilterDispatcher（过滤器调度器）是Struts2的最核心控制器，还有ActionContextCleanUp -->OtherFilters-->SiteMesh等；提交请求也是这个顺序，最后才是FilterDispatcher（过滤器调度器）。
+                                请求到达FilterDispatcher（过滤器调度器）时，FilterDispatcher（过滤器调度器）就询问ActionMapper（业务控制器映射器）是否调用Action（业务控制器）处理此请求，YES就将请求交给业务控制器代理（ActionProxy）。<br/>
+                                <kbd>3Struts</kbd>ActionProxy(业务控制器代理）通过Struts.xml配置文件找到需要调用的ActionClass（业务控制类），如图三。这里不是直接调用目标ActonClass（业务控制类），
+                                而是ActionProxy（业务控制器代理）还要创建一个ActionInvocation（控制器启用拦截器）实例，在调用之前，ActionInvocation（控制器启用拦截器）会根据配置加载ActionClass（业务控制类）
+                                相关的所有Interceptor（拦截器），对请求（HttpServlet Request）进行过滤。再转到目标ActionClass。<br/>
+                                <kbd>4Action</kbd>业务控制器，供Struts.xml调用，里面又调用了很多业务逻辑组件，并将它们有机的组成据有现实功能的业务器。<br/>
+                                <kbd>5组件</kbd>业务逻辑组件，它是工程开发的核心，封装对数据库的实现类和其它各种工程的业务实现类。<br/>
+                                <kbd>6JSP</kbd>物理视图地址，可以是JSP、FreeMarker等等。<br/>
+                                <i class="red">注意：打个比方</i>1User在开车。1User可以加油门、踩刹车、开雨刷、开各个窗口、开各个灯等等，4Action就是这些功能的不同控制器，4Action之所以可以当控制器，
+                                是因为它连接了不同功能的接口。像发动机、制动系统等等都是5组件。3Struts就是一个座驾前的开关，可以调用4Action--》--》5组件来控制汽车。
+                            </p>
+                        </li>
+                    </ol>
+                </li>
+                <li><h4>3.7.5 转发与重定向</h4>
+                    <ol>
+                        <li>
+                            <kbd>forward（转发）---type=dispatcher</kbd>将请求forward（转发）到指定JSP资源。可以用于转发到Welcome或Login页面。
+                            <kbd>redirect（重定向）---type=redirect</kbd>将请求redirect（重定向）到指定视图资源
+                            <p class="red">不同：</p>重定向会丢失所有的请求参数、请求属性和Action的处理结果。
+                            <p class="red">注意：</p>重定向不要定向到/WEB-INF/下，因为这里面的资源是受保护的。
+                        </li>
+                        <li>
+                            <kbd>Struts配置dispatcher</kbd>
+                            <div class="clearfix"></div>
+                            <img src="../images/Java-EE/chapter-1/dispacther.PNG" alt="" class="img-responsive img-thumbnail"/>
+                        </li>
+                        <li>
+                            <kbd>index登录页面</kbd>
+                            <div class="clearfix"></div>
+                            <img src="../images/Java-EE/chapter-1/browser-index.PNG" alt="" class="img-responsive img-thumbnail"/>
+                        </li>
+                        <li>
+                            <kbd>LoginAction业务处理页面</kbd>
+                            <div class="clearfix"></div>
+                            <img src="../images/Java-EE/chapter-1/dispacther-Login.PNG" alt="" class="img-responsive img-thumbnail"/>
+                        </li>
+                        <li>
+                            <kbd>登录结果</kbd>
+                            <div class="clearfix"></div>
+                            <img src="../images/Java-EE/chapter-1/dispacther-result.PNG" alt="" class="img-responsive img-thumbnail"/>
+                        </li>
+                        <li>
+                            <kbd>重定向的视图资源</kbd>
+                            <div class="clearfix"></div>
+                            <img src="../images/Java-EE/chapter-1/dispacther-welcome.PNG" alt="" class="img-responsive img-thumbnail"/>
+                        </li>
+                    </ol>
+                </li>
+                <li><h4>3.7.6 转发业务控制器（redirectAction）</h4>
+                    <ol>
+                        <li>
+                            <kbd>redirectAction（重定向业务控制器）---type=redirectAction</kbd>将一个Action的处结果定向到另一个Action。会丢失前一个Action的所有处理结果、请求参数、请求属性。
+                        </li>
+                        <li>
+                            <kbd>Struts配置dispatcher</kbd>
+                            <div class="clearfix"></div>
+                            <img src="../images/Java-EE/chapter-1/redirectAction-1.PNG" alt="" class="img-responsive img-thumbnail"/>
+                            <div class="clearfix"></div>
+                            <img src="../images/Java-EE/chapter-1/redirectAction-2.PNG" alt="" class="img-responsive img-thumbnail"/>
+                        </li>
+                    </ol>
+                </li>
+                <li><h4>3.7.7 动态结果</h4>
+                    <ol>
+                        <li>
+                            <kbd>动态转入视图资源</kbd>通过在Action的name、class、method、result中使用通配符（*）；
+                        </li>
+                        <li>
+                            <kbd>Struts使用通配符</kbd>
+                            <div class="clearfix"></div>
+                            <img src="../images/Java-EE/chapter-1/wildcard.PNG" alt="" class="img-responsive img-thumbnail"/>
+                            <div class="clearfix"></div>
+                            <img src="../images/Java-EE/chapter-1/wildcard-2.PNG" alt="" class="img-responsive img-thumbnail"/>
+                        </li>
+                    </ol>
+                </li>
+                <li><h4>3.7.8 Action属性值决定物理视图资源</h4>
+                    <ol>
+                        <li>
+                            <kbd>通过${属性名.属性名...}配置</kbd>Action的result。Action的name尽量不要用MyDefault，MyAction什么的。
+                        </li>
+                        <li>
+                            <kbd>${target}.jsp</kbd>
+                            <div class="clearfix"></div>
+                            <img src="../images/Java-EE/chapter-1/property-struts.PNG" alt="" class="img-responsive img-thumbnail"/>
+                        </li>
+                        <li>
+                            <kbd>aaa.class业务控制器</kbd>
+                            <div class="clearfix"></div>
+                            <img src="../images/Java-EE/chapter-1/property-aaa.PNG" alt="" class="img-responsive img-thumbnail"/>
+                        </li>
+                        <li>
+                            <kbd>输入success</kbd>
+                            <div class="clearfix"></div>
+                            <img src="../images/Java-EE/chapter-1/property-input-success.PNG" alt="" class="img-responsive img-thumbnail"/>
+                        </li>
+                        <li>
+                            <kbd>项目Content</kbd>
+                            <div class="clearfix"></div>
+                            <img src="../images/Java-EE/chapter-1/property-content.PNG" alt="" class="img-responsive img-thumbnail"/>
+                        </li>
+                        <li>
+                            <kbd>success.jsp页面</kbd>
+                            <div class="clearfix"></div>
+                            <img src="../images/Java-EE/chapter-1/property-success.PNG" alt="" class="img-responsive img-thumbnail"/>
+                        </li>
+                        <li>
+                            <kbd>输入success的结果</kbd>
+                            <div class="clearfix"></div>
+                            <img src="../images/Java-EE/chapter-1/property-input-success-r.PNG" alt="" class="img-responsive img-thumbnail"/>
+                        </li>
+                        <li>
+                            <kbd>welcome.jsp页面</kbd>
+                            <div class="clearfix"></div>
+                            <img src="../images/Java-EE/chapter-1/property-welcome.PNG" alt="" class="img-responsive img-thumbnail"/>
+                        </li>
+                        <li>
+                            <kbd>输入welcome结果</kbd>
+                            <div class="clearfix"></div>
+                            <img src="../images/Java-EE/chapter-1/property-input-welcome-r.PNG" alt="" class="img-responsive img-thumbnail"/>
+                        </li>
+                    </ol>
+                </li>
+                <li><h4>3.7.10 使用PreResultListener</h4>
+                    <ol>
+                        <li>
+                            <kbd>通过ActionInvocation（3.7.8提过）的addPreResultListener（）方法添加PreResultListener</kbd>具体实现如下图，实现一个小日历。也可以加日志。
+                        </li>
+                        <li>
+                            <kbd>index页面</kbd>
+                            <div class="clearfix"></div>
+                            <img src="../images/Java-EE/chapter-1/preResultListener-index.PNG" alt="" class="img-responsive img-thumbnail"/>
+                        </li>
+                        <li>
+                            <kbd>index.jsp实现</kbd>
+                            <div class="clearfix"></div>
+                            <img src="../images/Java-EE/chapter-1/preResultListener-index-r.PNG" alt="" class="img-responsive img-thumbnail"/>
+                        </li>
+                        <li>
+                            <kbd>struts业务控制器代理</kbd>
+                            <div class="clearfix"></div>
+                            <img src="../images/Java-EE/chapter-1/preResultListener-struts.PNG" alt="" class="img-responsive img-thumbnail"/>
+                        </li>
+                        <li>
+                            <kbd>Login.class业务控制器</kbd>
+                            <div class="clearfix"></div>
+                            <img src="../images/Java-EE/chapter-1/preResultListener-Login.PNG" alt="" class="img-responsive img-thumbnail"/>
+                        </li>
+                        <li>
+                            <kbd>success.jsp页面</kbd>
+                            <div class="clearfix"></div>
+                            <img src="../images/Java-EE/chapter-1/preResultListener-succ.PNG" alt="" class="img-responsive img-thumbnail"/>
+                        </li>
+                        <li>
+                            <kbd>success.jsp页面显示结果</kbd>
+                            <div class="clearfix"></div>
+                            <img src="../images/Java-EE/chapter-1/preResultListener-succ-r.PNG" alt="" class="img-responsive img-thumbnail"/>
+                        </li>
+                    </ol>
+                </li>
+            </ol>
+                </p>
             </div>
 
             <div id="Struts-exception" class="col-sm-12">
                 <h3>3.8 配置Struts的异常处理</h3>
-                <p>alkdfjdaiojlkdf；拉快点放假啦会计法阿里斯顿看风景啊啊了快点放假啊 了卡机的浪费空间  埃里克打飞机啊安抚就O(∩_∩)O哈哈~O(∩_∩)O哈哈~O(∩_∩)O哈哈~</p>
+                <p>
+            <ol type="A">
+                    <li><h4>3.8.1 全局异常之声明式异常捕捉</h4>
+                        <ol>
+                            <li>
+                                <h2 class="text-center"></h2>
+                                <div class="clearfix"></div>图一<br/>
+                                <img src="../images/Java-EE/chapter-1/" alt="" class="img-responsive img-thumbnail"/>
+                                <div class="clearfix"></div>图二<br/>
+                                <img src="../images/Java-EE/chapter-1/" alt="" class="img-responsive img-thumbnail"/>
+                                <div class="clearfix"></div>图三<br/>
+                                <img src="../images/Java-EE/chapter-1/" alt="" class="img-responsive img-thumbnail"/>
+                                <p></p>
+                            </li>
+                        </ol>
+                    </li>
+                    <li><h4>3.8.2 转发与重定向</h4>
+                        <ol>
+                            <li>
+                                <kbd>Struts配置dispatcher</kbd>
+                                <div class="clearfix"></div>
+                                <img src="../images/Java-EE/chapter-1/" alt="" class="img-responsive img-thumbnail"/>
+                            </li>
+                            <li>
+                                <kbd>index登录页面</kbd>
+                                <div class="clearfix"></div>
+                                <img src="../images/Java-EE/chapter-1/" alt="" class="img-responsive img-thumbnail"/>
+                            </li>
+                            <li>
+                                <kbd>LoginAction业务处理页面</kbd>
+                                <div class="clearfix"></div>
+                                <img src="../images/Java-EE/chapter-1/" alt="" class="img-responsive img-thumbnail"/>
+                            </li>
+                            <li>
+                                <kbd>登录结果</kbd>
+                                <div class="clearfix"></div>
+                                <img src="../images/Java-EE/chapter-1/" alt="" class="img-responsive img-thumbnail"/>
+                            </li>
+                            <li>
+                                <kbd>重定向的视图资源</kbd>
+                                <div class="clearfix"></div>
+                                <img src="../images/Java-EE/chapter-1/" alt="" class="img-responsive img-thumbnail"/>
+                            </li>
+                        </ol>
+                    </li>
+                    <li><h4>3.8.3 </h4>
+                        <ol>
+                            <li>
+                                <kbd></kbd>
+                            </li>
+                            <li>
+                                <kbd>Struts配置dispatcher</kbd>
+                                <div class="clearfix"></div>
+                                <img src="../images/Java-EE/chapter-1/" alt="" class="img-responsive img-thumbnail"/>
+                                <div class="clearfix"></div>
+                                <img src="../images/Java-EE/chapter-1/" alt="" class="img-responsive img-thumbnail"/>
+                            </li>
+                        </ol>
+                    </li>
+                </ol>
+                </p>
             </div>
 
             <div id="Struts-convention" class="col-sm-12">
                 <h3>3.9 Convention插件与“约束”支持</h3>
-                <p>alkdfjdaiojlkdf；拉快点放假啦会计法阿里斯顿看风景啊啊了快点放假啊 了卡机的浪费空间  埃里克打飞机啊安抚就O(∩_∩)O哈哈~O(∩_∩)O哈哈~O(∩_∩)O哈哈~</p>
+                <p>略</p>
             </div>
 
             <div id="Struts-global" class="col-sm-12">
