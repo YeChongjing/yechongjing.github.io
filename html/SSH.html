@@ -2,11 +2,16 @@
 <html lang="en">
 <head>
     <!-- Google Tag Manager -->
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-T255HGX');</script>
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-87666625-2', 'auto');
+        ga('send', 'pageview');
+
+    </script>
     <!-- End Google Tag Manager -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -826,60 +831,61 @@ public class Login extends ActionSupport{
                 <h3>3.8 配置Struts的异常处理</h3>
                 <p>
             <ol type="A">
-                    <li><h4>3.8.1 全局异常之声明式异常捕捉</h4>
+                    <li><h4>3.8.1 Struts2的异常处理机制</h4>
                         <ol>
                             <li>
-                                <h2 class="text-center"></h2>
-                                <div class="clearfix"></div>图一<br/>
-                                <img src="../images/Java-EE/chapter-1/" alt="" class="img-responsive img-thumbnail"/>
-                                <div class="clearfix"></div>图二<br/>
-                                <img src="../images/Java-EE/chapter-1/" alt="" class="img-responsive img-thumbnail"/>
-                                <div class="clearfix"></div>图三<br/>
-                                <img src="../images/Java-EE/chapter-1/" alt="" class="img-responsive img-thumbnail"/>
-                                <p></p>
+                                <h2 class="text-center"> 略</h2>
                             </li>
                         </ol>
                     </li>
-                    <li><h4>3.8.2 转发与重定向</h4>
+                    <li><h4>3.8.2 SQLException和Exception（声明式）异常捕捉</h4>
                         <ol>
                             <li>
-                                <kbd>Struts配置dispatcher</kbd>
+                                <kbd>Login.class</kbd>声明:SQLException和Exception两种异常捕捉。
                                 <div class="clearfix"></div>
-                                <img src="../images/Java-EE/chapter-1/" alt="" class="img-responsive img-thumbnail"/>
+                                <img src="../images/Java-EE/chapter-1/Exception-Login.PNG" alt="" class="img-responsive img-thumbnail"/>
                             </li>
                             <li>
-                                <kbd>index登录页面</kbd>
+                                <kbd><code>SQLException</code> sqlE.jsp</kbd>
                                 <div class="clearfix"></div>
-                                <img src="../images/Java-EE/chapter-1/" alt="" class="img-responsive img-thumbnail"/>
+                                <img src="../images/Java-EE/chapter-1/Exception-sql.PNG" alt="" class="img-responsive img-thumbnail"/>
                             </li>
                             <li>
-                                <kbd>LoginAction业务处理页面</kbd>
+                                <kbd><code>SQLException</code> index.jsp的输入</kbd>
                                 <div class="clearfix"></div>
-                                <img src="../images/Java-EE/chapter-1/" alt="" class="img-responsive img-thumbnail"/>
+                                <img src="../images/Java-EE/chapter-1/Exception-sql-index-r.PNG" alt="" class="img-responsive img-thumbnail"/>
                             </li>
                             <li>
-                                <kbd>登录结果</kbd>
+                                <kbd><code>SQLException</code> sqlE.jsp的显示结果</kbd>
                                 <div class="clearfix"></div>
-                                <img src="../images/Java-EE/chapter-1/" alt="" class="img-responsive img-thumbnail"/>
+                                <img src="../images/Java-EE/chapter-1/Exception-SQL-jsp-r.PNG" alt="" class="img-responsive img-thumbnail"/>
                             </li>
                             <li>
-                                <kbd>重定向的视图资源</kbd>
+                                <kbd>Struts.xml</kbd><i class="red">注意：</i>Struts里面去掉了<code>return "false"</code>的物理资源。因此登录失败就抛出Exception异常。
                                 <div class="clearfix"></div>
-                                <img src="../images/Java-EE/chapter-1/" alt="" class="img-responsive img-thumbnail"/>
+                                <img src="../images/Java-EE/chapter-1/Exception-E-struts.PNG" alt="" class="img-responsive img-thumbnail"/>
+                            </li>
+                            <li>
+                                <kbd><code>Exception</code> E.jsp代码</kbd>
+                                <div class="clearfix"></div>
+                                <img src="../images/Java-EE/chapter-1/Exception-E-jsp.PNG" alt="" class="img-responsive img-thumbnail"/>
+                            </li>
+                            <li>
+                                <kbd><code>Exception</code> index.jsp的错误输入</kbd>
+                                <div class="clearfix"></div>
+                                <img src="../images/Java-EE/chapter-1/Exception-E-index.PNG" alt="" class="img-responsive img-thumbnail"/>
+                            </li>
+                            <li>
+                                <kbd><code>Exception</code> E.jsp的显示结果</kbd>
+                                <div class="clearfix"></div>
+                                <img src="../images/Java-EE/chapter-1/Exception-E-jsp-r.PNG" alt="" class="img-responsive img-thumbnail"/>
                             </li>
                         </ol>
                     </li>
-                    <li><h4>3.8.3 </h4>
+                    <li><h4>3.8.3 输出异常信息</h4>
                         <ol>
                             <li>
-                                <kbd></kbd>
-                            </li>
-                            <li>
-                                <kbd>Struts配置dispatcher</kbd>
-                                <div class="clearfix"></div>
-                                <img src="../images/Java-EE/chapter-1/" alt="" class="img-responsive img-thumbnail"/>
-                                <div class="clearfix"></div>
-                                <img src="../images/Java-EE/chapter-1/" alt="" class="img-responsive img-thumbnail"/>
+                                <h2 class="text-center"> 略</h2>
                             </li>
                         </ol>
                     </li>
@@ -889,24 +895,71 @@ public class Login extends ActionSupport{
 
             <div id="Struts-convention" class="col-sm-12">
                 <h3>3.9 Convention插件与“约束”支持</h3>
-                <p>略</p>
+                <p>
+                <ol>
+                    <li>
+                        <ol>
+                            <li>
+                                <h2 class="text-center"> 略</h2>
+                            </li>
+                        </ol>
+                    </li>
+                </ol>
+                </p>
             </div>
 
             <div id="Struts-global" class="col-sm-12">
                 <h3>3.10 使用Struts的国际化</h3>
-                <p>alkdfjdaiojlkdf；拉快点放假啦会计法阿里斯顿看风景啊啊了快点放假啊 了卡机的浪费空间  埃里克打飞机啊安抚就O(∩_∩)O哈哈~O(∩_∩)O哈哈~O(∩_∩)O哈哈~</p>
+                <p>
+                <ol>
+                    <li>
+                        <ol>
+                            <li>
+                                <h2 class="text-center"> 略</h2>
+                            </li>
+                        </ol>
+                    </li>
+                </ol>
+                </p>
             </div>
 
             <div id="Struts-taglib" class="col-sm-12">
                 <h3>3.11 Struts的标签库</h3>
-                <p>alkdfjdaiojlkdf；拉快点放假啦会计法阿里斯顿看风景啊啊了快点放假啊 了卡机的浪费空间  埃里克打飞机啊安抚就O(∩_∩)O哈哈~O(∩_∩)O哈哈~O(∩_∩)O哈哈~</p>
+                <p>
+                <ol>
+                    <li><h4>总一些重要的标签。</h4>
+                        <ol>
+                            <li>
+                                <kbd>action</kbd>
+                            </li>
+                            <li>
+                                <kbd>debug</kbd>
+                            </li>
+                            <li>
+                                <kbd>include</kbd>
+                            </li>
+                            <li>
+                                <kbd>property</kbd>
+                            </li>
+                            <li>
+                                <kbd>token</kbd>
+                            </li>
+                            <li>
+                                <kbd></kbd>
+                            </li>
+                        </ol>
+                    </li>
+                </ol>
+                </p>
             </div>
 
             <div id="Struts-deep-4" class="col-sm-12"><h2>第肆章 深入学习Struts</h2></div>
 
             <div id="Struts-conversion" class="col-sm-12"><!--第四章-->
                 <h3>4.1 Struts的类型转换</h3>
-                <p>alkdfjdaiojlkdf；拉快点放假啦会计法阿里斯顿看风景啊啊了快点放假啊 了卡机的浪费空间  埃里克打飞机啊安抚就O(∩_∩)O哈哈~O(∩_∩)O哈哈~O(∩_∩)O哈哈~</p>
+                <p>
+
+                </p>
             </div>
 
             <div id="Struts-check" class="col-sm-12">
